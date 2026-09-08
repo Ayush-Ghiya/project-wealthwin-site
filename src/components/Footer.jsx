@@ -15,12 +15,6 @@ export function Footer() {
           <p>Email: [your email]</p>
           <p>Phone: [your phone]</p>
         </div>
-        <div>
-          <h4>Legal</h4>
-          <p><a href="#">Accessibility Statement</a></p>
-          <p><a href="#">Terms &amp; Conditions</a></p>
-          <p><a href="#">Privacy Policy</a></p>
-        </div>
       </div>
       <div className="footer__bottom">&copy; 2026 WealthWin. All rights reserved. &middot; Photography via Unsplash.</div>
     </footer>

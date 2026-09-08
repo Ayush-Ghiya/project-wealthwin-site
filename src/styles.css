@@ -1,10 +1,10 @@
 :root {
-  --navy: #0d0b46;
-  --navy-dark: #08061f;
+  --navy: #1c51a2;
+  --navy-dark: #0b2244;
   --cream: #f7f5f0;
   --white: #ffffff;
-  --accent: #c65b45;
-  --accent-dark: #a8442f;
+  --accent: #ec4c28;
+  --accent-dark: #b83b1f;
   --text: #1c1b33;
   --text-muted: #5a5a6e;
   --border: #e4e1da;
@@ -133,11 +133,14 @@ p {
 }
 
 .nav__logo {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--navy);
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.nav__logo img {
+  height: 34px;
+  width: auto;
+  display: block;
 }
 
 .nav__toggle {
@@ -757,7 +760,7 @@ p {
   margin: 0 auto;
   display: grid;
   gap: 32px;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 .footer h4 {
   color: var(--white);
