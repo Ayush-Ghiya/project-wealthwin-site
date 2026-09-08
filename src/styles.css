@@ -633,6 +633,21 @@ p {
     grid-template-columns: 1fr;
   }
 }
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.form-status {
+  margin: 16px 0 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.form-status--ok {
+  color: #1a7a3c;
+}
+.form-status--error {
+  color: var(--accent-dark);
+}
 
 /* ---------- CTA BANNER ---------- */
 .cta-banner {

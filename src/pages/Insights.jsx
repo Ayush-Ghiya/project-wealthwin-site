@@ -1,6 +1,29 @@
+import { useState } from 'preact/hooks';
 import { Reveal } from '../components/Reveal.jsx';
+import { submitToGoogleForm } from '../lib/googleForm.js';
 
 export function Insights() {
+  const [status, setStatus] = useState('idle'); // idle | sending | sent | error
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    setStatus('sending');
+    try {
+      await submitToGoogleForm({
+        firstName: form['first-name'].value,
+        lastName: form['last-name'].value,
+        email: form.email.value,
+        message: form.message.value,
+        service: form.service.value,
+      });
+      setStatus('sent');
+      form.reset();
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
     <>
       <header className="hero hero--small">
@@ -95,7 +118,7 @@ export function Insights() {
           <span className="eyebrow">Contact Form</span>
           <p>Have a financial question you've been putting off? You don't need to have everything figured out before starting a conversation.</p>
         </Reveal>
-        <Reveal as="form" className="form-card" delay={1}>
+        <Reveal as="form" className="form-card" delay={1} onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="field">
               <label htmlFor="ins-first">First name*</label>
@@ -125,7 +148,11 @@ export function Insights() {
               <option>Other</option>
             </select>
           </div>
-          <button type="submit" className="btn">Submit</button>
+          <button type="submit" className="btn" disabled={status === 'sending'}>
+            {status === 'sending' ? 'Sending…' : 'Submit'}
+          </button>
+          {status === 'sent' && <p className="form-status form-status--ok">Thanks — we'll be in touch soon.</p>}
+          {status === 'error' && <p className="form-status form-status--error">Something went wrong. Please try again.</p>}
         </Reveal>
       </section>
     </>
