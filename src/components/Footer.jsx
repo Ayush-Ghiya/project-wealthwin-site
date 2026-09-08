@@ -16,7 +16,7 @@ export function Footer() {
           <p>Phone: [your phone]</p>
         </div>
       </div>
-      <div className="footer__bottom">&copy; 2026 WealthWin. All rights reserved. &middot; Photography via Unsplash.</div>
+      <div className="footer__bottom">&copy; 2026 WealthWin. All rights reserved.</div>
     </footer>
   );
 }
