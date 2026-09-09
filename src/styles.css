@@ -821,10 +821,12 @@ p {
 .footer__brand p {
   margin: 0 0 12px;
 }
-.footer__logo {
-  height: 34px;
-  width: auto;
+.footer__wordmark {
   display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--white);
   margin-bottom: 16px;
 }
 .footer__note {
