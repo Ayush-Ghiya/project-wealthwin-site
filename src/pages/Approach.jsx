@@ -1,3 +1,4 @@
+import { Link } from 'preact-router/match';
 import { Reveal } from '../components/Reveal.jsx';
 
 export function Approach() {
@@ -8,6 +9,7 @@ export function Approach() {
         <Reveal as="p" className="hero__eyebrow">Our Approach</Reveal>
         <Reveal as="p" className="quote" delay={1}>&ldquo;We don't begin with products. We begin with you.&rdquo;</Reveal>
         <Reveal as="p" delay={2}>The right financial solution aligns with your life, priorities and future.</Reveal>
+        <Reveal as={Link} href="/contact" className="btn" delay={3}>Book a Conversation</Reveal>
       </header>
 
       <section className="section">

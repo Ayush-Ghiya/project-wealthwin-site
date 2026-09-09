@@ -1,3 +1,4 @@
+import { Link } from 'preact-router/match';
 import { Reveal } from '../components/Reveal.jsx';
 
 export function WealthManagement() {
@@ -8,6 +9,7 @@ export function WealthManagement() {
         <Reveal as="p" className="hero__eyebrow">Wealth Management</Reveal>
         <Reveal as="h1" delay={1}>You've worked hard to build your wealth. Now make it wealth work smarter.</Reveal>
         <Reveal as="p" delay={2}>As wealth grows, financial decisions become more complex. The firm provides structure, perspective and discipline.</Reveal>
+        <Reveal as={Link} href="/contact" className="btn" delay={3}>Book a Conversation</Reveal>
       </header>
 
       <section className="section">
