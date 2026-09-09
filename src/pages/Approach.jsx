@@ -6,10 +6,12 @@ export function Approach() {
     <>
       <header className="hero hero--small">
         <div className="hero__bg" style={{ backgroundImage: "url('/assets/journey-lake.jpg')" }}></div>
-        <Reveal as="p" className="hero__eyebrow">Our Approach</Reveal>
-        <Reveal as="p" className="quote" delay={1}>&ldquo;We don't begin with products. We begin with you.&rdquo;</Reveal>
-        <Reveal as="p" delay={2}>The right financial solution aligns with your life, priorities and future.</Reveal>
-        <Reveal as={Link} href="/contact" className="btn" delay={3}>Book a Conversation</Reveal>
+        <div className="hero__inner">
+          <Reveal as="p" className="hero__eyebrow">Our Approach</Reveal>
+          <Reveal as="p" className="quote" delay={1}>&ldquo;We don't begin with products. We begin with you.&rdquo;</Reveal>
+          <Reveal as="p" delay={2}>The right financial solution aligns with your life, priorities and future.</Reveal>
+          <Reveal as={Link} href="/contact" className="btn btn--arrow" delay={3}>Book a Conversation</Reveal>
+        </div>
       </header>
 
       <section className="section">

@@ -9,10 +9,12 @@ export function About() {
     <>
       <header className="hero hero--small">
         <div className="hero__bg" style={{ backgroundImage: "url('/assets/city-momentum.jpg')" }}></div>
-        <Reveal as="p" className="hero__eyebrow">About Toral</Reveal>
-        <Reveal as="h1" delay={1}>Behind every financial plan is a person. And behind WealthWin is a belief.</Reveal>
-        <Reveal as="p" delay={2}>Financial guidance should create clarity and confidence &mdash; not dependence.</Reveal>
-        <Reveal as={Link} href="/contact" className="btn" delay={3}>Book a Conversation</Reveal>
+        <div className="hero__inner">
+          <Reveal as="p" className="hero__eyebrow">About Toral</Reveal>
+          <Reveal as="h1" delay={1}>Behind every financial plan is a person. And behind WealthWin is a belief.</Reveal>
+          <Reveal as="p" delay={2}>Financial guidance should create clarity and confidence &mdash; not dependence.</Reveal>
+          <Reveal as={Link} href="/contact" className="btn btn--arrow" delay={3}>Book a Conversation</Reveal>
+        </div>
       </header>
 
       {/* MY STORY */}

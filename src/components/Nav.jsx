@@ -48,7 +48,7 @@ export function Nav({ currentUrl }) {
             </li>
           ))}
         </ul>
-        <Link href="/contact" className="nav__cta">Let's Talk</Link>
+        <Link href="/contact" className="nav__cta btn--arrow">Let's Talk</Link>
       </div>
     </nav>
   );

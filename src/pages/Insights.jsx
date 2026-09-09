@@ -29,10 +29,12 @@ export function Insights() {
     <>
       <header className="hero hero--small">
         <div className="hero__bg" style={{ backgroundImage: "url('/assets/insights-hero.jpg')" }}></div>
-        <Reveal as="p" className="hero__eyebrow">Insights &amp; Learning</Reveal>
-        <Reveal as="h1" delay={1}>Better financial decisions begin with better understanding.</Reveal>
-        <Reveal as="p" delay={2}>Ask better questions. Understand your choices. Stay informed.</Reveal>
-        <Reveal as={Link} href="/contact" className="btn" delay={3}>Book a Conversation</Reveal>
+        <div className="hero__inner">
+          <Reveal as="p" className="hero__eyebrow">Insights &amp; Learning</Reveal>
+          <Reveal as="h1" delay={1}>Better financial decisions begin with better understanding.</Reveal>
+          <Reveal as="p" delay={2}>Ask better questions. Understand your choices. Stay informed.</Reveal>
+          <Reveal as={Link} href="/contact" className="btn btn--arrow" delay={3}>Book a Conversation</Reveal>
+        </div>
       </header>
 
       <section className="section">
