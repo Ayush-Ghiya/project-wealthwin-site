@@ -152,6 +152,7 @@ export function Home() {
       <section className="cta-banner">
         <div className="cta-banner__bg" style={{ backgroundImage: "url('/assets/summit-perspective.jpg')" }}></div>
         <Reveal as="div" className="container">
+          <h2 className="section__title">Your next decision can feel different.</h2>
           <p className="quote">&ldquo;Your wealth deserves a strategy, not just a portfolio. Let's start with a conversation.&rdquo;</p>
           <Link href="/contact" className="btn">Let's Talk</Link>
         </Reveal>

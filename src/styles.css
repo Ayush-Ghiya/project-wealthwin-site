@@ -1,6 +1,7 @@
 :root {
   --navy: #1c51a2;
   --navy-dark: #0b2244;
+  --navy-deep: #14285c;
   --cream: #f7f5f0;
   --white: #ffffff;
   --accent: #ec4c28;
@@ -49,7 +50,7 @@ h2,
 h3 {
   font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
   line-height: 1.15;
   margin: 0 0 0.5em;
 }
@@ -406,7 +407,7 @@ p {
   background: var(--cream);
 }
 .section--navy {
-  background: var(--navy);
+  background: var(--navy-deep);
   color: var(--white);
 }
 .section--navy .text-muted {
@@ -420,6 +421,19 @@ p {
 }
 .section__head h2 {
   font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.section__title {
+  font-size: clamp(1.9rem, 3.6vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  color: var(--navy-deep);
+  margin: 0 0 18px;
+}
+.section--navy .section__title,
+.cta-banner .section__title {
+  color: var(--white);
 }
 
 .eyebrow {
@@ -786,14 +800,14 @@ p {
   z-index: -1;
   background: linear-gradient(
     180deg,
-    rgba(13, 11, 70, 0.9),
-    rgba(8, 6, 31, 0.92)
+    rgba(20, 40, 92, 0.9),
+    rgba(11, 22, 50, 0.94)
   );
 }
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: var(--navy-dark);
+  background: #0d1c40;
   color: #cfcef0;
   padding: 64px 24px 24px;
 }

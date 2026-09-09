@@ -25,6 +25,7 @@ export function About() {
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">My Story</span>
+            <h2 className="section__title">A calmer, clearer way to think about money.</h2>
             <p>Financial decisions connect to families, aspirations, responsibilities, careers and desired lifestyle. Investors often needed clarity about what they owned and why, rather than more products or information.</p>
             <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>&ldquo;WealthWin was built around a simple belief: better financial decisions begin with better understanding.&rdquo;</p>
           </Reveal>
@@ -35,6 +36,7 @@ export function About() {
       <section className="section section--navy">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">What I Believe</span>
+          <h2 className="section__title">The principles behind every conversation.</h2>
         </Reveal>
         <div className="container grid">
           <Reveal as="div" className="card"><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;I don't want my clients to simply know what they own. I want them to understand why they own it.&rdquo;</p></Reveal>
@@ -73,6 +75,7 @@ export function About() {
       <section className="section">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Who I Work With</span>
+          <h2 className="section__title">A plan that meets you where you are.</h2>
           <p>Clients are people who:</p>
         </Reveal>
         <Reveal as="div" className="container" style={{ marginBottom: '44px' }}>
