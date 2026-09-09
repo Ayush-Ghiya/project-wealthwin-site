@@ -821,13 +821,16 @@ p {
 .footer__brand p {
   margin: 0 0 12px;
 }
-.footer__wordmark {
+.footer a.footer__wordmark {
   display: block;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--white);
   margin-bottom: 16px;
+}
+.footer a.footer__wordmark:hover {
+  color: var(--white);
 }
 .footer__note {
   font-size: 0.88rem;
