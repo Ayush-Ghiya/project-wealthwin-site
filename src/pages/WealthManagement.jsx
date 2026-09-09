@@ -5,7 +5,7 @@ export function WealthManagement() {
   return (
     <>
       <header className="hero">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/wealth.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/freedom-shore.jpg')" }}></div>
         <Reveal as="p" className="hero__eyebrow">Wealth Management</Reveal>
         <Reveal as="h1" delay={1}>You've worked hard to build your wealth. Now make it wealth work smarter.</Reveal>
         <Reveal as="p" delay={2}>As wealth grows, financial decisions become more complex. The firm provides structure, perspective and discipline.</Reveal>
@@ -15,7 +15,7 @@ export function WealthManagement() {
       <section className="section">
         <div className="split">
           <Reveal as="div" className="split__media">
-            <img src="/assets/meeting.jpg" alt="Wealth management consultation" />
+            <img src="/assets/family-generations.jpg" alt="Wealth management consultation" />
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">Who This Is For</span>

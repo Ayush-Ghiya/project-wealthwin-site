@@ -5,7 +5,7 @@ export function Home() {
   return (
     <>
       <header className="hero">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-city.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-skyline.jpg')" }}></div>
         <Reveal as="p" className="hero__eyebrow">Wealth &amp; Investment Advisory</Reveal>
         <Reveal as="h1" delay={1}>Beyond Returns. Making Your Wealth Work Smarter.</Reveal>
         <Reveal as="p" delay={2}>Your wealth should do more than grow. It should create security, choices and freedom for the life you want to live.</Reveal>
@@ -16,7 +16,7 @@ export function Home() {
       <section className="section">
         <div className="split">
           <Reveal as="div" className="split__media">
-            <img src="/assets/analytics.jpg" alt="Financial analytics and planning" />
+            <img src="/assets/vista-longview.jpg" alt="Financial analytics and planning" />
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">The Problem</span>
@@ -78,7 +78,7 @@ export function Home() {
       <section className="section section--alt">
         <div className="split split--reverse">
           <Reveal as="div" className="split__media">
-            <img src="/assets/wealth.jpg" alt="Building and managing wealth" />
+            <img src="/assets/living-well.jpg" alt="Building and managing wealth" />
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">What We Help With</span>
@@ -148,7 +148,7 @@ export function Home() {
 
       {/* FINAL CTA */}
       <section className="cta-banner">
-        <div className="cta-banner__bg" style={{ backgroundImage: "url('/assets/skyline.jpg')" }}></div>
+        <div className="cta-banner__bg" style={{ backgroundImage: "url('/assets/summit-perspective.jpg')" }}></div>
         <Reveal as="div" className="container">
           <p className="quote">&ldquo;Your wealth deserves a strategy, not just a portfolio. Let's start with a conversation.&rdquo;</p>
           <Link href="/contact" className="btn">Let's Talk</Link>

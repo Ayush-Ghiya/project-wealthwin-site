@@ -8,7 +8,7 @@ export function About() {
   return (
     <>
       <header className="hero hero--small">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/handshake.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/city-momentum.jpg')" }}></div>
         <Reveal as="p" className="hero__eyebrow">About Toral</Reveal>
         <Reveal as="h1" delay={1}>Behind every financial plan is a person. And behind WealthWin is a belief.</Reveal>
         <Reveal as="p" delay={2}>Financial guidance should create clarity and confidence &mdash; not dependence.</Reveal>
@@ -114,7 +114,7 @@ export function About() {
 
       {/* BEYOND WEALTHWIN */}
       <section className="cta-banner">
-        <div className="cta-banner__bg" style={{ backgroundImage: "url('/assets/skyline.jpg')" }}></div>
+        <div className="cta-banner__bg" style={{ backgroundImage: "url('/assets/summit-perspective.jpg')" }}></div>
         <Reveal as="div" className="container">
           <span className="eyebrow" style={{ color: '#e5b7ac' }}>Beyond WealthWin</span>
           <p style={{ maxWidth: '720px', margin: '0 auto 20px', color: '#e6e5f8' }}>Through workshops, investor awareness initiatives, teaching and conversations, Toral aims to make financial concepts accessible and actionable.</p>

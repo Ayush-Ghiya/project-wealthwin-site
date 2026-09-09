@@ -630,11 +630,14 @@ p {
 
 /* ---------- PEOPLE CARDS ---------- */
 .people-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 .people-card {
+  flex: 0 1 320px;
+  max-width: 360px;
   text-align: center;
   padding: 26px 20px;
 }

@@ -5,7 +5,7 @@ export function Approach() {
   return (
     <>
       <header className="hero hero--small">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/planning.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/journey-lake.jpg')" }}></div>
         <Reveal as="p" className="hero__eyebrow">Our Approach</Reveal>
         <Reveal as="p" className="quote" delay={1}>&ldquo;We don't begin with products. We begin with you.&rdquo;</Reveal>
         <Reveal as="p" delay={2}>The right financial solution aligns with your life, priorities and future.</Reveal>
@@ -80,7 +80,7 @@ export function Approach() {
       <section className="section section--alt">
         <div className="split split--reverse">
           <Reveal as="div" className="split__media">
-            <img src="/assets/charts.jpg" alt="Disciplined investing over market cycles" />
+            <img src="/assets/insights-hero.jpg" alt="Disciplined investing over market cycles" />
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">What We Don't Do</span>
