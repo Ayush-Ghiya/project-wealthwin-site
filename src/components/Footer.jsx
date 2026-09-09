@@ -25,13 +25,13 @@ export function Footer() {
           <ul className="footer__links">
             <li><Link href="/about">About Toral</Link></li>
             <li><Link href="/contact">Book a Conversation</Link></li>
-            <li><a href="mailto:hello@wealthwin.in">hello@wealthwin.in</a></li>
+            <li>Email: [your email]</li>
             <li>Phone: [your phone]</li>
           </ul>
         </div>
         <div>
           <h4>Based In</h4>
-          <p>Mumbai &middot; India</p>
+          <p>[Your address]</p>
         </div>
       </div>
       <div className="footer__bottom">&copy; 2026 WealthWin. For education and information only.</div>

@@ -82,7 +82,7 @@ export function Approach() {
       <section className="section section--alt">
         <div className="split split--reverse">
           <Reveal as="div" className="split__media">
-            <img src="/assets/insights-hero.jpg" alt="Disciplined investing over market cycles" />
+            <img src="/assets/steadfast-tree.jpg" alt="Disciplined investing over market cycles" />
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">What We Don't Do</span>
