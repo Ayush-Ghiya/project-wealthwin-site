@@ -86,7 +86,7 @@ export function Approach() {
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">What We Don't Do</span>
-            <ul className="check-list">
+            <ul className="check-list avoid-list">
               <li>Chasing the next hot investment</li>
               <li>Building portfolios around products</li>
               <li>Relying purely on past returns</li>

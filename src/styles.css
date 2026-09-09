@@ -584,6 +584,11 @@ p {
   color: var(--accent);
   font-weight: 700;
 }
+.check-list.avoid-list li::before {
+  content: "✕";
+  color: var(--text-muted);
+  font-weight: 600;
+}
 
 /* ---------- QUOTE ---------- */
 .quote {
