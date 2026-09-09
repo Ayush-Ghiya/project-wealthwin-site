@@ -119,7 +119,7 @@ export function About() {
 
       {/* BEYOND WEALTHWIN */}
       <section className="cta-banner">
-        <div className="cta-banner__bg" style={{ backgroundImage: "url('/assets/summit-perspective.jpg')" }}></div>
+        <div className="cta-banner__bg" style={{ backgroundImage: "url('/assets/education-sessions.jpg')" }}></div>
         <Reveal as="div" className="container">
           <span className="eyebrow" style={{ color: '#e5b7ac' }}>Beyond WealthWin</span>
           <p style={{ maxWidth: '720px', margin: '0 auto 20px', color: '#e6e5f8' }}>Through workshops, investor awareness initiatives, teaching and conversations, Toral aims to make financial concepts accessible and actionable.</p>

@@ -28,7 +28,7 @@ export function Contact() {
   return (
     <>
       <header className="hero hero--small">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/city-momentum.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/conversation-table.jpg')" }}></div>
         <div className="hero__inner">
           <Reveal as="h1">Let's Talk</Reveal>
           <Reveal as="p" className="quote" delay={1}>&ldquo;Your wealth deserves a strategy, not just a portfolio. Let's start with a conversation.&rdquo;</Reveal>
