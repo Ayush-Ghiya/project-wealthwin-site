@@ -85,11 +85,11 @@ export function Contact() {
         <div className="container grid">
           <Reveal as="div" className="card">
             <h3>Address</h3>
-            <p className="text-muted">[Your address]</p>
+            <p className="text-muted">Mumbai &middot; India</p>
           </Reveal>
           <Reveal as="div" className="card" delay={1}>
             <h3>Email</h3>
-            <p className="text-muted">[your email]</p>
+            <p className="text-muted"><a href="mailto:hello@wealthwin.in">hello@wealthwin.in</a></p>
           </Reveal>
           <Reveal as="div" className="card" delay={2}>
             <h3>Phone</h3>
