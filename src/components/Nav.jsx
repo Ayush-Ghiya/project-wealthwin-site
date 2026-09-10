@@ -28,9 +28,12 @@ export function Nav({ currentUrl }) {
   return (
     <nav className={`nav${scrolled ? ' is-scrolled' : ''}${open ? ' nav--open' : ''}`}>
       <div className="nav__inner">
+        <div>
+
         <Link href="/" className="nav__logo">
           <img src="/assets/wealthwin-logo.png" alt="WealthWin" />
         </Link>
+        </div>
         <button
           className="nav__toggle"
           aria-label="Toggle menu"

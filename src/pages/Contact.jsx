@@ -11,12 +11,12 @@ export function Contact() {
     setStatus('sending');
     try {
       await submitToGoogleForm({
-        firstName: form['first-name'].value,
-        lastName: form['last-name'].value,
-        email: form.email.value,
-        message: form.message.value,
-        service: form.service.value,
-        appointment: form.appointment.value,
+        name: form['name'].value,
+        phone: form['phone'].value,
+        email: form['email'].value,
+        message: form['message'].value,
+        service: form['service'].value,
+        appointment: form['appointment'].value,
       });
       setStatus('sent');
       form.reset();
@@ -39,12 +39,12 @@ export function Contact() {
         <Reveal as="form" className="form-card" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="field">
-              <label htmlFor="c-first">First name*</label>
-              <input id="c-first" name="first-name" type="text" required />
+              <label htmlFor="c-name">Name*</label>
+              <input id="c-name" name="name" type="text" required />
             </div>
             <div className="field">
-              <label htmlFor="c-last">Last name*</label>
-              <input id="c-last" name="last-name" type="text" required />
+              <label htmlFor="c-phone">Phone*</label>
+              <input id="c-phone" name="phone" type="text" required length={10} />
             </div>
           </div>
           <div className="field">
@@ -56,13 +56,16 @@ export function Contact() {
             <textarea id="c-message" name="message"></textarea>
           </div>
           <div className="field">
-            <label htmlFor="c-service">Services*</label>
+            <label htmlFor="c-service">Services</label>
             <select id="c-service" name="service" required>
               <option value="">Select a service</option>
               <option>Review existing investments</option>
               <option>Wealth management</option>
               <option>Financial independence</option>
               <option>Investment strategy</option>
+              <option>Review existing portfolio</option>
+              <option>Goal Designing</option>
+              <option>Insurance Planning</option>
               <option>Other</option>
             </select>
           </div>

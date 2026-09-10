@@ -27,9 +27,7 @@ export function WealthManagement() {
               <li>Good earnings but uncertain structure</li>
               <li>Desire for objective portfolio review</li>
               <li>Approaching major life transitions</li>
-              <li>Questions about retirement or financial independence</li>
               <li>Significant wealth without consolidated strategy</li>
-              <li>Need for financial decision discussion</li>
             </ul>
           </Reveal>
         </div>

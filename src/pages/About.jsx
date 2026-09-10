@@ -4,6 +4,8 @@ import { useCountUp } from '../hooks/useCountUp.js';
 
 export function About() {
   const counter = useCountUp(1000, { suffix: '+' });
+  const counter2 = useCountUp(185, { suffix: '+' });
+  const counter3 = useCountUp(50, { suffix: '+ Cr' });
 
   return (
     <>
@@ -58,12 +60,21 @@ export function About() {
             <div className="stat__num"><span ref={counter.ref}>{counter.text}</span></div>
             <div className="stat__label">people reached through financial education</div>
           </div>
+          <div className="stat">
+            <div className="stat__num"><span ref={counter2.ref}>{counter2.text}</span></div>
+            <div className="stat__label">families supported</div>
+          </div>
+           <div className="stat">
+            <div className="stat__num"><span ref={counter3.ref}>{counter3.text}</span></div>
+            <div className="stat__label">Asset under advice</div>
+          </div>
         </Reveal>
+           
         <div className="container">
           <ul className="check-list grid">
             <Reveal as="li">CFP&reg; (Certified Financial Planner)</Reveal>
             <Reveal as="li" delay={1}>MBA &ndash; Finance</Reveal>
-            <Reveal as="li" delay={2}>Bachelor of Commerce</Reveal>
+            <Reveal as="li" delay={2}>10 years of experience</Reveal>
             <Reveal as="li">NRI Practice Management expertise</Reveal>
             <Reveal as="li" delay={1}>1000+ people reached through financial education</Reveal>
             <Reveal as="li" delay={2}>Teaching and faculty experience</Reveal>

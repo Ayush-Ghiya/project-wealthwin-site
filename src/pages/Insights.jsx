@@ -12,11 +12,11 @@ export function Insights() {
     setStatus('sending');
     try {
       await submitToGoogleForm({
-        firstName: form['first-name'].value,
-        lastName: form['last-name'].value,
-        email: form.email.value,
-        message: form.message.value,
-        service: form.service.value,
+        name: form['name'].value,
+        phone: form['phone'].value,
+        email: form['email'].value,
+        message: form['message'].value,
+        service: form['service'].value,
       });
       setStatus('sent');
       form.reset();
@@ -132,17 +132,17 @@ export function Insights() {
       <section className="section section--alt">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Contact Form</span>
-          <p>Have a financial question you've been putting off? You don't need to have everything figured out before starting a conversation.</p>
+          <p>Have a financial question you've been putting off?<br/>You don't need to have everything figured out before starting a conversation.</p>
         </Reveal>
         <Reveal as="form" className="form-card" delay={1} onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="field">
-              <label htmlFor="ins-first">First name*</label>
-              <input id="ins-first" name="first-name" type="text" required />
+              <label htmlFor="ins-name">Name*</label>
+              <input id="ins-name" name="name" type="text" required />
             </div>
             <div className="field">
-              <label htmlFor="ins-last">Last name*</label>
-              <input id="ins-last" name="last-name" type="text" required />
+              <label htmlFor="ins-phone">Phone*</label>
+              <input id="ins-phone" name="phone" type="text" required length={10} />
             </div>
           </div>
           <div className="field">
@@ -161,6 +161,9 @@ export function Insights() {
               <option>Wealth management</option>
               <option>Financial independence</option>
               <option>Investment strategy</option>
+              <option>Review existing portfolio</option>
+              <option>Goal Designing</option>
+              <option>Insurance Planning</option>
               <option>Other</option>
             </select>
           </div>

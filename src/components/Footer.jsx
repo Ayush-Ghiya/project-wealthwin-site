@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="footer">
       <div className="footer__grid">
         <div className="footer__brand">
-          <Link href="/" className="footer__wordmark">WealthWin</Link>
+          <Link href="/" className="footer__wordmark">WealthWin Services</Link>
           <p>Beyond Returns. Making wealth work smarter.</p>
           <p className="footer__note">
             Have a financial question you've been putting off? You don't need to have
