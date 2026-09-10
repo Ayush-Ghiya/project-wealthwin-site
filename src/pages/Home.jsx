@@ -22,7 +22,7 @@ export function Home() {
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">The Problem</span>
-            <p>You may be doing well financially, but everything may not be working together. Investments, protection, retirement, family responsibilities and aspirations are interconnected, yet financial decisions are often made individually.</p>
+            <p>You may be doing well financially, but everything may not be working together.<br/>Investments, protection, retirement, family responsibilities and aspirations are interconnected, yet financial decisions are often made individually.</p>
             <p>WealthWin addresses four core areas:</p>
           </Reveal>
         </div>
@@ -87,9 +87,8 @@ export function Home() {
             <ul className="check-list">
               <li>Building Wealth</li>
               <li>Managing Existing Wealth</li>
-              <li>Preparing for Financial Independence</li>
               <li>Protecting What You've Built</li>
-              <li>Making Important Decisions</li>
+              <li>Preparing for Financial Independence</li>
             </ul>
           </Reveal>
         </div>
@@ -153,7 +152,7 @@ export function Home() {
         <div className="cta-banner__bg" style={{ backgroundImage: "url('/assets/summit-perspective.jpg')" }}></div>
         <Reveal as="div" className="container">
           <h2 className="section__title">Your next decision can feel different.</h2>
-          <p className="quote">&ldquo;Your wealth deserves a strategy, not just a portfolio. Let's start with a conversation.&rdquo;</p>
+          <p className="quote">&ldquo;Your wealth deserves a strategy, not just a portfolio.<br/>Let's start with a conversation.&rdquo;</p>
           <Link href="/contact" className="btn">Let's Talk</Link>
         </Reveal>
       </section>

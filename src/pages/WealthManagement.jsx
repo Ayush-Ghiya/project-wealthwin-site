@@ -8,7 +8,7 @@ export function WealthManagement() {
         <div className="hero__bg" style={{ backgroundImage: "url('/assets/freedom-shore.jpg')" }}></div>
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">Wealth Management</Reveal>
-          <Reveal as="h1" delay={1}>You've worked hard to build your wealth. <span className="accent-line">Now make it wealth work smarter.</span></Reveal>
+          <Reveal as="h1" delay={1}>You've worked hard to build your wealth. <span className="accent-line">Now make it work smarter.</span></Reveal>
           <Reveal as="p" delay={2}>As wealth grows, financial decisions become more complex. The firm provides structure, perspective and discipline.</Reveal>
           <Reveal as={Link} href="/contact" className="btn btn--arrow" delay={3}>Book a Conversation</Reveal>
         </div>
