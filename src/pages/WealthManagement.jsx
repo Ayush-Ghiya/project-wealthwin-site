@@ -44,8 +44,6 @@ export function WealthManagement() {
           <ul className="check-list grid">
             <Reveal as="li">Stepping back from individual investments</Reveal>
             <Reveal as="li" delay={1}>Seeing the bigger picture</Reveal>
-            <Reveal as="li" delay={2}>Questioning assumptions</Reveal>
-            <Reveal as="li">Understanding trade-offs</Reveal>
             <Reveal as="li" delay={1}>Making informed decisions</Reveal>
             <Reveal as="li" delay={2}>Staying disciplined through market cycles</Reveal>
           </ul>
@@ -62,7 +60,6 @@ export function WealthManagement() {
         </Reveal>
         <Reveal as="div" className="container tag-row" delay={2}>
           <span className="tag">Mutual Funds</span>
-          <span className="tag">ETFs</span>
           <span className="tag">GIFT City</span>
           <span className="tag">PMS</span>
           <span className="tag">SIF</span>

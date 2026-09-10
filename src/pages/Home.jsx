@@ -9,7 +9,7 @@ export function Home() {
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">Wealth &amp; Investment Consultancy</Reveal>
           <Reveal as="h1" delay={1}>Beyond Returns. <span className="accent-line">Making Your Wealth Work Smarter.</span></Reveal>
-          <Reveal as="p" delay={2}>Your wealth should do more than grow. <br/>It should create <b>security</b>, <b>choices</b> and <b>freedom</b> for the life you want to live.</Reveal>
+          <Reveal as="p" delay={2}>Wealth is ultimately about the choices it gives you.</Reveal>
           <Reveal as={Link} href="/approach" className="btn btn--arrow" delay={3}>Discover Our Approach</Reveal>
         </div>
       </header>

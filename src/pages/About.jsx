@@ -44,7 +44,7 @@ export function About() {
           <Reveal as="div" className="card"><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;I don't want my clients to simply know what they own. I want them to understand why they own it.&rdquo;</p></Reveal>
           <Reveal as="div" className="card" delay={1}><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;Good financial advice should simplify decisions, not complicate them.&rdquo;</p></Reveal>
           <Reveal as="div" className="card" delay={2}><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;My role is not to predict markets. It is to help clients make sensible decisions through different cycles.&rdquo;</p></Reveal>
-          <Reveal as="div" className="card" delay={3}><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;Wealth is ultimately about the choices it gives you.&rdquo;</p></Reveal>
+          <Reveal as="div" className="card" delay={3}><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;Your wealth should do more than grow. It should create <b>security</b>, <b>choices</b> and <b>freedom</b> for the life you want to live.&rdquo;</p></Reveal>
         </div>
       </section>
 
@@ -125,7 +125,7 @@ export function About() {
         <Reveal as="div" className="container">
           <span className="eyebrow" style={{ color: '#e5b7ac' }}>Beyond WealthWin</span>
           <p style={{ maxWidth: '720px', margin: '0 auto 20px', color: '#e6e5f8' }}>Through workshops, investor awareness initiatives, teaching and conversations, Toral aims to make financial concepts accessible and actionable.</p>
-          <p className="quote">&ldquo;Financial confidence isn't built by knowing everything. It begins with knowing enough to ask the right questions.&rdquo;</p>
+          <p className="quote">&ldquo;Financial confidence isn't built by knowing everything.<br/> It begins with knowing enough to ask the right questions.&rdquo;</p>
         </Reveal>
       </section>
     </>
