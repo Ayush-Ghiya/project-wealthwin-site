@@ -35,20 +35,6 @@ export function WealthManagement() {
         </div>
       </section>
 
-      <section className="section section--navy">
-        <Reveal as="div" className="container section__head">
-          <span className="eyebrow">Questions Worth Asking</span>
-        </Reveal>
-        <div className="container grid">
-          <Reveal as="div" className="card"><p className="quote" style={{ fontSize: '1.1rem' }}>Is your wealth adequately diversified?</p></Reveal>
-          <Reveal as="div" className="card" delay={1}><p className="quote" style={{ fontSize: '1.1rem' }}>Do your investments have a clear purpose?</p></Reveal>
-          <Reveal as="div" className="card" delay={2}><p className="quote" style={{ fontSize: '1.1rem' }}>Are your financial decisions working towards the same goals?</p></Reveal>
-          <Reveal as="div" className="card"><p className="quote" style={{ fontSize: '1.1rem' }}>Are you prepared for the next stage of life?</p></Reveal>
-          <Reveal as="div" className="card" delay={1}><p className="quote" style={{ fontSize: '1.1rem' }}>Can your wealth support the lifestyle you want?</p></Reveal>
-          <Reveal as="div" className="card" delay={2}><p className="quote" style={{ fontSize: '1.1rem' }}>What happens if life doesn't go according to plan?</p></Reveal>
-        </div>
-      </section>
-
       <section className="section section--alt">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Our Role</span>
@@ -69,7 +55,8 @@ export function WealthManagement() {
       <section className="section">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Investment &amp; Wealth Solutions</span>
-          <p className="quote">&ldquo;Products are tools. The strategy comes first.&rdquo;</p>
+          <h2 className="section__title">Products are tools. The strategy comes first.</h2>
+          <p>Depending on your needs and strategy, we may use:</p>
         </Reveal>
         <Reveal as="div" className="container tag-row" delay={1}>
           <span className="tag">Mutual Funds</span>
@@ -80,6 +67,7 @@ export function WealthManagement() {
           <span className="tag">Insurance</span>
           <span className="tag">Other appropriate solutions</span>
         </Reveal>
+        <Reveal as="p" className="quote" delay={2} style={{ marginTop: '36px' }}>The solution follows the strategy &mdash; not the other way around.</Reveal>
       </section>
 
       <section className="section section--alt">

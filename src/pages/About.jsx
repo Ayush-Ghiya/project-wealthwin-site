@@ -25,9 +25,11 @@ export function About() {
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">My Story</span>
-            <h2 className="section__title">A calmer, clearer way to think about money.</h2>
-            <p>Financial decisions connect to families, aspirations, responsibilities, careers and desired lifestyle. Investors often needed clarity about what they owned and why, rather than more products or information.</p>
-            <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>&ldquo;WealthWin was built around a simple belief: better financial decisions begin with better understanding.&rdquo;</p>
+            <h2 className="section__title">Why I chose to build WealthWin</h2>
+            <p>Financial decisions are rarely just about money. They are connected to our families, aspirations, responsibilities, careers and the life we want to create.</p>
+            <p>Over the years, I saw that investors often didn't need more products or information. They needed more clarity &mdash; about what they owned, why they owned it and how it connected to their larger goals.</p>
+            <p>That shaped the way I wanted to work with clients.</p>
+            <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>WealthWin was built around a simple belief: better financial decisions begin with better understanding.</p>
           </Reveal>
         </div>
       </section>
