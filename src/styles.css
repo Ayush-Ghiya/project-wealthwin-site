@@ -600,9 +600,20 @@ p {
   margin: 0 auto 20px;
   color: var(--navy);
 }
-.section--navy .quote,
+.section--navy .quote {
+  color: var(--white);
+}
 .hero .quote {
   color: var(--white);
+  text-align: left;
+  max-width: 20ch;
+  margin: 0 0 20px;
+  font-size: clamp(1.8rem, 4.6vw, 3.4rem);
+  line-height: 1.14;
+}
+.hero h1 + .quote {
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  max-width: 32ch;
 }
 
 .cta-banner .quote {

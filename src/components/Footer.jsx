@@ -25,13 +25,13 @@ export function Footer() {
           <ul className="footer__links">
             <li><Link href="/about">About Toral</Link></li>
             <li><Link href="/contact">Book a Conversation</Link></li>
-            <li>Email: [your email]</li>
-            <li>Phone: [your phone]</li>
+            <li>Email: <a href="mailto:toralsomaiya@thewealthwin.com">toralsomaiya@thewealthwin.com</a></li>
+            <li>Phone: <a href="tel:+917600996888">+91 7600 996 888</a></li>
           </ul>
         </div>
         <div>
           <h4>Based In</h4>
-          <p>[Your address]</p>
+          <p>B-807, KP Epitome, Near DAV School, Near Lake, Makarba, Ahmedabad 380051</p>
         </div>
       </div>
       <div className="footer__bottom">&copy; 2026 WealthWin. For education and information only.</div>

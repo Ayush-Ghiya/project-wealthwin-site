@@ -85,15 +85,15 @@ export function Contact() {
         <div className="container grid">
           <Reveal as="div" className="card">
             <h3>Address</h3>
-            <p className="text-muted">[Your address]</p>
+            <p className="text-muted">B-807, KP Epitome, Near DAV School, Near Lake, Makarba, Ahmedabad 380051</p>
           </Reveal>
           <Reveal as="div" className="card" delay={1}>
             <h3>Email</h3>
-            <p className="text-muted">[your email]</p>
+            <p className="text-muted"><a href="mailto:toralsomaiya@thewealthwin.com">toralsomaiya@thewealthwin.com</a></p>
           </Reveal>
           <Reveal as="div" className="card" delay={2}>
             <h3>Phone</h3>
-            <p className="text-muted">[your phone]</p>
+            <p className="text-muted"><a href="tel:+917600996888">+91 7600 996 888</a></p>
           </Reveal>
         </div>
       </section>

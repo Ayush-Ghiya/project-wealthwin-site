@@ -14,7 +14,7 @@ export function Approach() {
         </div>
       </header>
 
-      <section className="section">
+      <section className="section section--navy">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">What We Believe</span>
         </Reveal>
@@ -25,7 +25,7 @@ export function Approach() {
           </Reveal>
           <Reveal as="div" className="card" delay={1}>
             <h3>2. Purpose Before Performance</h3>
-            <p className="text-muted">&ldquo;Returns matter. But returns without purpose don't create security.&rdquo;</p>
+            <p className="text-muted">Returns matter. But without purpose, they don't create security.</p>
           </Reveal>
           <Reveal as="div" className="card" delay={2}>
             <h3>3. Strategy Before Selection</h3>
@@ -37,7 +37,7 @@ export function Approach() {
           </Reveal>
           <Reveal as="div" className="card" delay={1}>
             <h3>5. Understanding Before Action</h3>
-            <p className="text-muted">&ldquo;You should know what you own, why you own it and what role it plays.&rdquo;</p>
+            <p className="text-muted">You should know what you own, why you own it and what role it plays.</p>
           </Reveal>
           <Reveal as="div" className="card" delay={2}>
             <h3>6. Partnership Over Transactions</h3>
@@ -46,7 +46,7 @@ export function Approach() {
         </div>
       </section>
 
-      <section className="section section--navy">
+      <section className="section">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">How We Work</span>
         </Reveal>
