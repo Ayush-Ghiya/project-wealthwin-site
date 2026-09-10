@@ -9,7 +9,7 @@ export function Footer() {
           <p>Beyond Returns. Making wealth work smarter.</p>
           <p className="footer__note">
             Have a financial question you've been putting off? You don't need to have
-            everything figured out before starting a conversation.
+            everything figured out before starting a conversation. <Link href="/contact">Book a Conversation</Link>
           </p>
         </div>
         <div>

@@ -16,38 +16,6 @@ export function Approach() {
 
       <section className="section section--navy">
         <Reveal as="div" className="container section__head">
-          <span className="eyebrow">What We Believe</span>
-        </Reveal>
-        <div className="container grid">
-          <Reveal as="div" className="card">
-            <h3>1. People Before Products</h3>
-            <p className="text-muted">Understanding the person behind the money comes first.</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={1}>
-            <h3>2. Purpose Before Performance</h3>
-            <p className="text-muted">Returns matter. But without purpose, they don't create security.</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={2}>
-            <h3>3. Strategy Before Selection</h3>
-            <p className="text-muted">Investments are one part of wealth management.</p>
-          </Reveal>
-          <Reveal as="div" className="card">
-            <h3>4. Diversification Before Prediction</h3>
-            <p className="text-muted">Building resilient strategies rather than predicting markets.</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={1}>
-            <h3>5. Understanding Before Action</h3>
-            <p className="text-muted">You should know what you own, why you own it and what role it plays.</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={2}>
-            <h3>6. Partnership Over Transactions</h3>
-            <p className="text-muted">Ongoing relationship, not one-time recommendations.</p>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="section">
-        <Reveal as="div" className="container section__head">
           <span className="eyebrow">How We Work</span>
         </Reveal>
         <div className="container grid">
@@ -75,6 +43,38 @@ export function Approach() {
             <span className="card__num">5</span>
             <h3>Review</h3>
             <p className="text-muted">Review and adapt as your life evolves.</p>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section">
+        <Reveal as="div" className="container section__head">
+          <span className="eyebrow">What We Believe</span>
+        </Reveal>
+        <div className="container grid">
+          <Reveal as="div" className="card">
+            <h3>1. People Before Products</h3>
+            <p className="text-muted">Understanding the person behind the money comes first.</p>
+          </Reveal>
+          <Reveal as="div" className="card" delay={1}>
+            <h3>2. Purpose Before Performance</h3>
+            <p className="text-muted">Returns matter. But without purpose, they don't create security.</p>
+          </Reveal>
+          <Reveal as="div" className="card" delay={2}>
+            <h3>3. Strategy Before Selection</h3>
+            <p className="text-muted">Investments are one part of wealth management.</p>
+          </Reveal>
+          <Reveal as="div" className="card">
+            <h3>4. Diversification Before Prediction</h3>
+            <p className="text-muted">Building resilient strategies rather than predicting markets.</p>
+          </Reveal>
+          <Reveal as="div" className="card" delay={1}>
+            <h3>5. Understanding Before Action</h3>
+            <p className="text-muted">You should know what you own, why you own it and what role it plays.</p>
+          </Reveal>
+          <Reveal as="div" className="card" delay={2}>
+            <h3>6. Partnership Over Transactions</h3>
+            <p className="text-muted">Ongoing relationship, not one-time recommendations.</p>
           </Reveal>
         </div>
       </section>
