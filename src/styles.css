@@ -325,12 +325,21 @@ p {
   z-index: -1;
   /* directional scrim: dense left → clear right, plus a base vertical wash */
   background:
-    linear-gradient(90deg, rgba(11, 34, 68, 0.92) 0%, rgba(11, 34, 68, 0.72) 45%, rgba(11, 34, 68, 0.25) 100%),
+    linear-gradient(
+      90deg,
+      rgba(11, 34, 68, 0.92) 0%,
+      rgba(11, 34, 68, 0.72) 45%,
+      rgba(11, 34, 68, 0.25) 100%
+    ),
     linear-gradient(180deg, rgba(8, 6, 31, 0.35), rgba(8, 6, 31, 0.55));
 }
 @media (max-width: 700px) {
   .hero::after {
-    background: linear-gradient(180deg, rgba(11, 34, 68, 0.86), rgba(8, 6, 31, 0.9));
+    background: linear-gradient(
+      180deg,
+      rgba(11, 34, 68, 0.86),
+      rgba(8, 6, 31, 0.9)
+    );
   }
   .hero h1 {
     max-width: none;
@@ -721,7 +730,8 @@ p {
 .profile-img img {
   width: 100%;
   aspect-ratio: 3/4;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--white);
 }
 
 /* ---------- FORM ---------- */
