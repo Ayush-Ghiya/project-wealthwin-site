@@ -38,7 +38,7 @@ export function WealthManagement() {
       <section className="section section--alt">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Our Role</span>
-          <p className="quote">&ldquo;Think of us as your financial sounding board.&rdquo;</p>
+          <p className="quote">Think of us as your financial sounding board.</p>
         </Reveal>
         <div className="container">
           <ul className="check-list grid">
@@ -56,9 +56,11 @@ export function WealthManagement() {
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Investment &amp; Wealth Solutions</span>
           <p className="quote">Products are tools. The strategy comes first.</p>
+        </Reveal>
+        <Reveal as="div" className="container tag-quote" delay={1}>
           <p>Depending on your needs and strategy, we may use:</p>
         </Reveal>
-        <Reveal as="div" className="container tag-row" delay={1}>
+        <Reveal as="div" className="container tag-row" delay={2}>
           <span className="tag">Mutual Funds</span>
           <span className="tag">ETFs</span>
           <span className="tag">GIFT City</span>
@@ -67,12 +69,12 @@ export function WealthManagement() {
           <span className="tag">Insurance</span>
           <span className="tag">Other appropriate solutions</span>
         </Reveal>
-        <Reveal as="p" className="quote" delay={2}>The solution follows the strategy &mdash; not the other way around.</Reveal>
       </section>
 
       <section className="section section--alt">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">The Ongoing Relationship</span>
+          <p className="quote">Wealth management doesn’t end when an investment is made.</p>
         </Reveal>
         <Reveal as="div" className="container cycle" delay={1}>
           <div className="cycle__step">Regular Reviews</div>
