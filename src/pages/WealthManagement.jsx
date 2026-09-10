@@ -52,10 +52,10 @@ export function WealthManagement() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--navy">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Investment &amp; Wealth Solutions</span>
-          <h2 className="section__title">Products are tools. The strategy comes first.</h2>
+          <p className="quote">Products are tools. The strategy comes first.</p>
           <p>Depending on your needs and strategy, we may use:</p>
         </Reveal>
         <Reveal as="div" className="container tag-row" delay={1}>
@@ -67,7 +67,7 @@ export function WealthManagement() {
           <span className="tag">Insurance</span>
           <span className="tag">Other appropriate solutions</span>
         </Reveal>
-        <Reveal as="p" className="quote" delay={2} style={{ marginTop: '36px' }}>The solution follows the strategy &mdash; not the other way around.</Reveal>
+        <Reveal as="p" className="quote" delay={2}>The solution follows the strategy &mdash; not the other way around.</Reveal>
       </section>
 
       <section className="section section--alt">
