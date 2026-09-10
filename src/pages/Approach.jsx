@@ -18,7 +18,7 @@ export function Approach() {
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">How We Work</span>
         </Reveal>
-        <div className="container grid">
+        <div className="container grid grid--3">
           <Reveal as="div" className="card">
             <span className="card__num">1</span>
             <h3>Understand</h3>

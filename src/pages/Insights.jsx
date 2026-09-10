@@ -65,7 +65,7 @@ export function Insights() {
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Learning Offerings</span>
         </Reveal>
-        <div className="container grid grid--3">
+        <div className="container grid grid--2">
           <Reveal as="div" className="card">
             <h3>Corporate Workshops</h3>
             <p className="text-muted">Practical financial education for organisations</p>
@@ -79,16 +79,8 @@ export function Insights() {
             <p className="text-muted">Conversations on financial confidence</p>
           </Reveal>
           <Reveal as="div" className="card">
-            <h3>Client Learning Events</h3>
-            <p className="text-muted">Ongoing meaningful conversations</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={1}>
-            <h3>Webinars</h3>
-            <p className="text-muted">Discussions on relevant financial topics</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={2}>
-            <h3>Niveshika</h3>
-            <p className="text-muted">Customised wealth-building approach</p>
+            <h3>Private Wealth Circle</h3>
+            <p className="text-muted">Exclusive sessions for selected clients</p>
           </Reveal>
         </div>
       </section>

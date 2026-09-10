@@ -141,6 +141,7 @@ export function Home() {
           <Reveal as="div" delay={1}>
             <span className="eyebrow">Meet Your Planner</span>
             <p>Toral Somaiya is a Certified Financial Planner with an MBA in Finance.</p>
+            <p>With a strong foundation in finance and a people-first approach, Toral helps you understand your finances, plan with clarity and build towards your goals.</p>
             <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>&ldquo;Financial guidance should make people feel more informed &mdash; not more confused.&rdquo;</p>
             <Link href="/about" className="btn btn--outline" style={{ color: 'var(--navy)' }}>Meet Toral</Link>
           </Reveal>
