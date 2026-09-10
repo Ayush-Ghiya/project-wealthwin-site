@@ -14,7 +14,7 @@ export function Approach() {
         </div>
       </header>
 
-      <section className="section section--navy">
+      <section className="section">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">How We Work</span>
         </Reveal>
@@ -47,7 +47,7 @@ export function Approach() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section--navy">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">What We Believe</span>
         </Reveal>
