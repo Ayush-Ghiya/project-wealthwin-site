@@ -57,7 +57,7 @@ export function WealthManagement() {
           <p className="quote">Think of us as your financial sounding board.</p>
         </Reveal>
         <div className="container">
-          <ul className="check-list grid">
+          <ul className="check-list check-list--center">
             <Reveal as="li">Stepping back from individual investments</Reveal>
             <Reveal as="li" delay={1}>Seeing the bigger picture</Reveal>
             <Reveal as="li" delay={1}>Making informed decisions</Reveal>

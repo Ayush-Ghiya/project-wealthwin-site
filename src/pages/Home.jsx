@@ -100,16 +100,16 @@ export function Home() {
           <span className="eyebrow">The WealthWin Difference</span>
           <p>Building financial confidence through:</p>
         </Reveal>
-        <div className="container grid">
-          <Reveal as="div" className="card">
+        <div className="container people-grid">
+          <Reveal as="div" className="card people-card">
             <h3>Clarity</h3>
             <p className="text-muted">Know where you stand.</p>
           </Reveal>
-          <Reveal as="div" className="card" delay={1}>
+          <Reveal as="div" className="card people-card" delay={1}>
             <h3>Confidence</h3>
             <p className="text-muted">Understand why you're making each decision.</p>
           </Reveal>
-          <Reveal as="div" className="card" delay={2}>
+          <Reveal as="div" className="card people-card" delay={2}>
             <h3>Control</h3>
             <p className="text-muted">Make your wealth work for the life you want.</p>
           </Reveal>
