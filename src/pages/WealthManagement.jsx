@@ -14,6 +14,24 @@ export function WealthManagement() {
         </div>
       </header>
 
+      <section className="section section--navy">
+        <Reveal as="div" className="container section__head">
+          <span className="eyebrow">Investment &amp; Wealth Solutions</span>
+          <p className="quote">Products are tools. The strategy comes first.</p>
+        </Reveal>
+        <Reveal as="div" className="container tag-quote" delay={1}>
+          <p>Depending on your needs and strategy, we may use:</p>
+        </Reveal>
+        <Reveal as="div" className="container tag-row" delay={2}>
+          <span className="tag">Mutual Funds</span>
+          <span className="tag">GIFT City</span>
+          <span className="tag">PMS</span>
+          <span className="tag">SIF</span>
+          <span className="tag">Insurance</span>
+          <span className="tag">Other appropriate solutions</span>
+        </Reveal>
+      </section>
+
       <section className="section">
         <div className="split">
           <Reveal as="div" className="split__media">
@@ -48,22 +66,50 @@ export function WealthManagement() {
         </div>
       </section>
 
-      <section className="section section--navy">
+      {/* WHO I WORK WITH (moved from the About page) */}
+      <section className="section">
         <Reveal as="div" className="container section__head">
-          <span className="eyebrow">Investment &amp; Wealth Solutions</span>
-          <p className="quote">Products are tools. The strategy comes first.</p>
+          <span className="eyebrow">Who I Work With</span>
+          <h2 className="section__title">A plan that meets you where you are.</h2>
+          <p>Clients are people who:</p>
         </Reveal>
-        <Reveal as="div" className="container tag-quote" delay={1}>
-          <p>Depending on your needs and strategy, we may use:</p>
+        <Reveal as="div" className="container" style={{ marginBottom: '44px' }}>
+          <ul className="check-list grid grid--3">
+            <li>Value professional advice</li>
+            <li>Want to understand their money</li>
+            <li>Appreciate long-term relationships</li>
+            <li>Plan rather than react</li>
+            <li>Want wealth to support their life</li>
+            <li>Believe in informed decision making</li>
+          </ul>
         </Reveal>
-        <Reveal as="div" className="container tag-row" delay={2}>
-          <span className="tag">Mutual Funds</span>
-          <span className="tag">GIFT City</span>
-          <span className="tag">PMS</span>
-          <span className="tag">SIF</span>
-          <span className="tag">Insurance</span>
-          <span className="tag">Other appropriate solutions</span>
-        </Reveal>
+        <div className="container people-grid">
+          <Reveal as="div" className="people-card card">
+            <div className="people-card__title">Client Type</div>
+            <h3>Professionals</h3>
+            <p className="text-muted">Salaried individuals looking to build long-term wealth systematically</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card" delay={1}>
+            <div className="people-card__title">Client Type</div>
+            <h3>Entrepreneurs</h3>
+            <p className="text-muted">Business owners who want their personal wealth to grow alongside their business</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card" delay={2}>
+            <div className="people-card__title">Client Type</div>
+            <h3>Successful Women</h3>
+            <p className="text-muted">Women seeking financial confidence and independence on their own terms</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card" delay={3}>
+            <div className="people-card__title">Client Type</div>
+            <h3>HNI Families</h3>
+            <p className="text-muted">High-net-worth families looking for structured, multi-generational wealth planning</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card" delay={4}>
+            <div className="people-card__title">Client Type</div>
+            <h3>NRIs</h3>
+            <p className="text-muted">Non-resident Indians managing investments and financial goals across borders</p>
+          </Reveal>
+        </div>
       </section>
 
       <section className="section section--alt">
