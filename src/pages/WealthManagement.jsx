@@ -14,7 +14,7 @@ export function WealthManagement() {
         </div>
       </header>
 
-      <section className="section section--navy">
+      <section className="section section--alt">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Investment &amp; Wealth Solutions</span>
           <p className="quote">Products are tools. The strategy comes first.</p>
