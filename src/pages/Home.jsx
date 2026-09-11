@@ -139,7 +139,7 @@ export function Home() {
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">What Clients Value</span>
         </Reveal>
-        <Reveal as="div" className="container tag-row tag-row--left" delay={1}>
+        <Reveal as="div" className="container tag-row" delay={1}>
           <span className="tag">Clarity</span>
           <span className="tag">Personal attention</span>
           <span className="tag">Responsiveness</span>
