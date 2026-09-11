@@ -615,14 +615,14 @@ p {
 /* centred-wrap variant: like .people-grid, an odd item that wraps to its
    own row sits centered instead of stretching to fill the grid track */
 .check-list--center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px 28px;
 }
-.check-list--center li {
-  flex: 0 1 320px;
-  max-width: 360px;
+@media (max-width: 700px) {
+  .check-list--center {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ---------- QUOTE ---------- */
