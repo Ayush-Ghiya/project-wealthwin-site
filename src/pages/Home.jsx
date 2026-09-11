@@ -116,21 +116,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* CLIENT TESTIMONIALS */}
-      <section className="section section--navy">
-        <Reveal as="div" className="container section__head">
-          <span className="eyebrow">Client Testimonials</span>
-          <p>Clients value:</p>
-        </Reveal>
-        <Reveal as="div" className="container tag-row" delay={1}>
-          <span className="tag">Clarity</span>
-          <span className="tag">Personal attention</span>
-          <span className="tag">Responsiveness</span>
-          <span className="tag">Confidence</span>
-          <span className="tag">Discipline</span>
-          <span className="tag">Long-term relationships</span>
-        </Reveal>
-      </section>
+  
 
       {/* TORAL */}
       <section className="section section--alt">
@@ -146,6 +132,21 @@ export function Home() {
             <Link href="/about" className="btn btn--outline" style={{ color: 'var(--navy)' }}>Meet Toral</Link>
           </Reveal>
         </div>
+      </section>
+
+          {/* WHAT CLIENTS VALUE */}
+      <section className="section">
+        <Reveal as="div" className="container section__head">
+          <span className="eyebrow">What Clients Value</span>
+        </Reveal>
+        <Reveal as="div" className="container tag-row tag-row--left" delay={1}>
+          <span className="tag">Clarity</span>
+          <span className="tag">Personal attention</span>
+          <span className="tag">Responsiveness</span>
+          <span className="tag">Confidence</span>
+          <span className="tag">Discipline</span>
+          <span className="tag">Long-term relationships</span>
+        </Reveal>
       </section>
 
       {/* FINAL CTA */}

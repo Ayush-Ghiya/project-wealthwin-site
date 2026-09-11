@@ -697,6 +697,11 @@ p {
   .tag-row > .tag:last-child:nth-child(odd) {
     grid-column: 1 / -1;
   }
+  /* "What Clients Value" (Home) only: left-align instead of the default
+     centred cells, without affecting the other .tag-row on WM Solutions */
+  .tag-row.tag-row--left {
+    text-align: left;
+  }
 }
 
 /* ---------- STATS ---------- */
