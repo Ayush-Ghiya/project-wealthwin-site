@@ -51,13 +51,31 @@ export function Home() {
               aria-labelledby="puzzle-title"
             >
               <title id="puzzle-title">
-                A square jigsaw with three pieces already joined and the top-right corner missing, its piece moving in to fill the gap.
+                A square jigsaw with three pieces already joined and the top-right corner missing, the WealthWin piece moving in to fill the gap.
               </title>
               <path className="puzzle__slot" d={PUZZLE_KEY} />
               {PUZZLE_PIECES.map((d, i) => (
                 <path key={i} className={`puzzle__piece puzzle__piece--${i + 1}`} d={d} />
               ))}
-              <path className="puzzle__key" d={PUZZLE_KEY} />
+              {/* the corner piece carries the WealthWin mark. Its body is the
+                  clean 90x90 square (110,52)-(200,142) — both tabs protrude
+                  outward — so the mark is centred on (155,97) in a 70-unit
+                  square box, leaving 10 units clear of every body edge and
+                  well clear of the tabs. The box is square and the source is
+                  512x512, so xMidYMid meet renders the mark unstretched.
+                  Face and mark share one <g> so they move as one object. */}
+              <g className="puzzle__key">
+                <path className="puzzle__key-face" d={PUZZLE_KEY} />
+                <image
+                  className="puzzle__key-mark"
+                  href="/favicon-512.png"
+                  x="120"
+                  y="62"
+                  width="70"
+                  height="70"
+                  preserveAspectRatio="xMidYMid meet"
+                />
+              </g>
             </svg>
           </Reveal>
           <Reveal as="div" delay={1}>
