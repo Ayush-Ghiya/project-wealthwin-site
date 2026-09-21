@@ -1,6 +1,17 @@
 import { Link } from 'preact-router/match';
 import { Reveal } from '../components/Reveal.jsx';
 
+/* Pinwheel dissection of one square into four outer pieces (the four core
+   areas) plus a central piece whose four tabs lock into all of them. */
+const PUZZLE_KEY =
+  'M68,68 L91,68 A9,9 0 0,1 109,68 L132,68 L132,91 A9,9 0 0,1 132,109 L132,132 L109,132 A9,9 0 0,1 91,132 L68,132 L68,109 A9,9 0 0,1 68,91 Z';
+const PUZZLE_PIECES = [
+  'M0,0 L132,0 L132,25 A9,9 0 0,1 132,43 L132,68 L109,68 A9,9 0 0,0 91,68 L43,68 A9,9 0 0,0 25,68 L0,68 Z',
+  'M132,0 L200,0 L200,132 L175,132 A9,9 0 0,1 157,132 L132,132 L132,109 A9,9 0 0,0 132,91 L132,43 A9,9 0 0,0 132,25 Z',
+  'M68,132 L91,132 A9,9 0 0,0 109,132 L157,132 A9,9 0 0,0 175,132 L200,132 L200,200 L68,200 L68,175 A9,9 0 0,1 68,157 Z',
+  'M0,68 L25,68 A9,9 0 0,1 43,68 L68,68 L68,91 A9,9 0 0,0 68,109 L68,157 A9,9 0 0,0 68,175 L68,200 L0,200 Z',
+];
+
 export function Home() {
   return (
     <>
@@ -14,32 +25,46 @@ export function Home() {
         </div>
       </header>
 
-      {/* THE PROBLEM */}
+      {/* THE MISSING PIECE */}
       <section className="section">
         <div className="split">
-          <Reveal as="div" className="split__media">
-            <img src="/assets/vista-longview.jpg" alt="Financial analytics and planning" />
+          <Reveal as="div" className="puzzle">
+            <svg
+              className="puzzle__svg"
+              viewBox="0 0 200 200"
+              role="img"
+              aria-labelledby="puzzle-title"
+            >
+              <title id="puzzle-title">
+                Four interlocking pieces of your financial life, completed by a central connecting piece.
+              </title>
+              {PUZZLE_PIECES.map((d, i) => (
+                <path key={i} className={`puzzle__piece puzzle__piece--${i + 1}`} d={d} />
+              ))}
+              <path className="puzzle__slot" d={PUZZLE_KEY} />
+              <path className="puzzle__key" d={PUZZLE_KEY} />
+            </svg>
           </Reveal>
           <Reveal as="div" delay={1}>
-            <span className="eyebrow">The Problem</span>
+            <span className="eyebrow">The Missing Piece</span>
             <p>You may be doing well financially, but everything may not be working together.<br/>Investments, protection, retirement, family responsibilities and aspirations are interconnected, yet financial decisions are often made individually.</p>
             <p>WealthWin addresses four core areas:</p>
           </Reveal>
         </div>
-        <div className="container grid" style={{ marginTop: '56px' }}>
-          <Reveal as="div" className="card">
+        <div className="container grid puzzle-areas" style={{ marginTop: '56px' }}>
+          <Reveal as="div" className="card card--piece">
             <h3>Growing Wealth</h3>
             <p className="text-muted">Build a disciplined, diversified approach.</p>
           </Reveal>
-          <Reveal as="div" className="card" delay={1}>
+          <Reveal as="div" className="card card--piece" delay={1}>
             <h3>Protecting Wealth</h3>
             <p className="text-muted">Identify risks that could disrupt what you've built.</p>
           </Reveal>
-          <Reveal as="div" className="card" delay={2}>
+          <Reveal as="div" className="card card--piece" delay={2}>
             <h3>Strategising for the Future</h3>
             <p className="text-muted">Align your wealth with the life you want.</p>
           </Reveal>
-          <Reveal as="div" className="card" delay={3}>
+          <Reveal as="div" className="card card--piece" delay={3}>
             <h3>Creating Financial Freedom</h3>
             <p className="text-muted">Build the flexibility to make choices on your terms.</p>
           </Reveal>

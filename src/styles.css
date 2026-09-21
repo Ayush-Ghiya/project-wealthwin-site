@@ -981,3 +981,160 @@ p {
 .article-card__more:hover {
   color: var(--accent-dark);
 }
+
+/* ---------- PUZZLE / THE MISSING PIECE (home) ---------- */
+.puzzle {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: clamp(22px, 4vw, 44px);
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+.puzzle__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.puzzle__piece,
+.puzzle__key {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+.puzzle__piece {
+  fill: var(--white);
+  stroke: var(--navy);
+  stroke-width: 1.2;
+  stroke-opacity: 0.32;
+  stroke-linejoin: round;
+  transition:
+    opacity 0.55s var(--ease),
+    transform 0.55s var(--ease);
+}
+/* the empty centre, before the piece arrives */
+.puzzle__slot {
+  fill: none;
+  stroke: var(--navy);
+  stroke-width: 1.2;
+  stroke-opacity: 0.4;
+  stroke-dasharray: 5 6;
+  stroke-linejoin: round;
+  opacity: 0;
+  transition: opacity 0.45s ease 0.55s;
+}
+/* WealthWin: the piece that connects the four */
+.puzzle__key {
+  fill: var(--accent);
+  /* filter lengths are SVG user units, so this scales with the figure */
+  filter: drop-shadow(0 2px 3.5px rgba(20, 40, 92, 0.28));
+  transition:
+    opacity 0.7s var(--ease),
+    transform 0.7s var(--ease);
+  transition-delay: 0.5s;
+}
+
+/* pre-reveal: pieces sit apart, centre slot still open */
+.puzzle:not(.is-visible) .puzzle__piece {
+  opacity: 0;
+}
+.puzzle:not(.is-visible) .puzzle__piece--1 {
+  transform: translateY(-10px);
+}
+.puzzle:not(.is-visible) .puzzle__piece--2 {
+  transform: translateX(10px);
+}
+.puzzle:not(.is-visible) .puzzle__piece--3 {
+  transform: translateY(10px);
+}
+.puzzle:not(.is-visible) .puzzle__piece--4 {
+  transform: translateX(-10px);
+}
+.puzzle:not(.is-visible) .puzzle__slot {
+  opacity: 1;
+  transition-delay: 0s;
+}
+.puzzle:not(.is-visible) .puzzle__key {
+  opacity: 0;
+  transform: translate(-14px, -14px) scale(0.84);
+}
+.puzzle__piece--1 {
+  transition-delay: 0.1s;
+}
+.puzzle__piece--2 {
+  transition-delay: 0.18s;
+}
+.puzzle__piece--3 {
+  transition-delay: 0.26s;
+}
+.puzzle__piece--4 {
+  transition-delay: 0.34s;
+}
+
+/* four core areas: one grid track per piece */
+.puzzle-areas {
+  grid-template-columns: repeat(4, 1fr);
+}
+.card--piece::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 14px;
+  background-color: var(--navy);
+  opacity: 0.72;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4,4%20H9%20A3.2,3.2%200%200,1%2015,4%20H20%20V9%20A3.2,3.2%200%200,0%2020,15%20V20%20H15%20A3.2,3.2%200%200,0%209,20%20H4%20V15%20A3.2,3.2%200%200,1%204,9%20Z'/%3E%3C/svg%3E")
+    no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M4,4%20H9%20A3.2,3.2%200%200,1%2015,4%20H20%20V9%20A3.2,3.2%200%200,0%2020,15%20V20%20H15%20A3.2,3.2%200%200,0%209,20%20H4%20V15%20A3.2,3.2%200%200,1%204,9%20Z'/%3E%3C/svg%3E")
+    no-repeat center / contain;
+  transition: transform 0.4s var(--ease);
+}
+.card--piece:nth-child(2)::before {
+  transform: rotate(90deg);
+}
+.card--piece:nth-child(3)::before {
+  transform: rotate(180deg);
+}
+.card--piece:nth-child(4)::before {
+  transform: rotate(270deg);
+}
+
+@media (max-width: 900px) {
+  .puzzle-areas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 820px) {
+  .puzzle {
+    max-width: 340px;
+  }
+}
+@media (max-width: 560px) {
+  .puzzle-areas {
+    grid-template-columns: 1fr;
+  }
+  .puzzle {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .puzzle__piece,
+  .puzzle__key,
+  .puzzle__slot,
+  .card--piece::before {
+    transition: none;
+  }
+  .puzzle:not(.is-visible) .puzzle__piece,
+  .puzzle:not(.is-visible) .puzzle__key {
+    opacity: 1;
+    transform: none;
+  }
+  .puzzle:not(.is-visible) .puzzle__slot {
+    opacity: 0;
+  }
+}
