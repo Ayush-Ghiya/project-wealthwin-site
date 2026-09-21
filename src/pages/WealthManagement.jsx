@@ -33,18 +33,40 @@ export function WealthManagement() {
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Investment &amp; Wealth Solutions</span>
           <p className="quote">Products are tools. The strategy comes first.</p>
-        </Reveal>
-        <Reveal as="div" className="container tag-quote" delay={1}>
           <p>Depending on your needs and strategy, we may use:</p>
         </Reveal>
-        <Reveal as="div" className="container tag-row" delay={2}>
-          <span className="tag">Mutual Funds</span>
-          <span className="tag">GIFT City</span>
-          <span className="tag">PMS</span>
-          <span className="tag">SIF</span>
-          <span className="tag">Insurance</span>
-          <span className="tag">Other appropriate solutions</span>
-        </Reveal>
+        <div className="container people-grid">
+          <Reveal as="div" className="people-card card">
+            <div className="people-card__title">Solution</div>
+            <h3>Mutual Funds</h3>
+            <p className="text-muted">Pooled, professionally managed investments across markets.</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card" delay={1}>
+            <div className="people-card__title">Solution</div>
+            <h3>GIFT City</h3>
+            <p className="text-muted">Access to international investment opportunities via India's global finance hub.</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card" delay={2}>
+            <div className="people-card__title">Solution</div>
+            <h3>PMS</h3>
+            <p className="text-muted">Personalised portfolios, directly managed for larger investments.</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card" delay={3}>
+            <div className="people-card__title">Solution</div>
+            <h3>SIF</h3>
+            <p className="text-muted">A newer category of specialised, differentiated investment strategies.</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card" delay={4}>
+            <div className="people-card__title">Solution</div>
+            <h3>Insurance</h3>
+            <p className="text-muted">Protection that safeguards your wealth and family from the unexpected.</p>
+          </Reveal>
+          <Reveal as="div" className="people-card card">
+            <div className="people-card__title">Solution</div>
+            <h3>Other Appropriate Solutions</h3>
+            <p className="text-muted">Additional instruments chosen to fit your specific plan.</p>
+          </Reveal>
+        </div>
       </section>
 
       {/** NOT REQUIRED */}
