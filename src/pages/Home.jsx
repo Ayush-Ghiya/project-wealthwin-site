@@ -64,18 +64,7 @@ export function Home() {
                   well clear of the tabs. The box is square and the source is
                   512x512, so xMidYMid meet renders the mark unstretched.
                   Face and mark share one <g> so they move as one object. */}
-              <g className="puzzle__key">
-                <path className="puzzle__key-face" d={PUZZLE_KEY} />
-                <image
-                  className="puzzle__key-mark"
-                  href="/favicon-512.png"
-                  x="120"
-                  y="62"
-                  width="70"
-                  height="70"
-                  preserveAspectRatio="xMidYMid meet"
-                />
-              </g>
+              <path className="puzzle__key" d={PUZZLE_KEY} />
             </svg>
           </Reveal>
           <Reveal as="div" delay={1}>

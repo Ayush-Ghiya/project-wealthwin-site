@@ -59,10 +59,6 @@ export function Contact() {
             <label htmlFor="c-service">Services</label>
             <select id="c-service" name="service" required>
               <option value="">Select a service</option>
-              <option>Review existing investments</option>
-              <option>Wealth management</option>
-              <option>Financial independence</option>
-              <option>Investment strategy</option>
               <option>Review existing portfolio</option>
               <option>Goal Designing</option>
               <option>Insurance Planning</option>

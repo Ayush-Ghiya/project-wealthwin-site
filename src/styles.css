@@ -784,7 +784,7 @@ p {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(8, 6, 31, 0.22);
-  max-width: 380px;
+  max-width: 350px;
 }
 .profile-img img {
   width: 100%;
@@ -1025,14 +1025,10 @@ p {
 }
 /* WealthWin: the top-right corner piece, lifted off the surface and offset
    up-and-out from its slot — still arriving, aimed back at that corner.
-   It carries the WealthWin mark, so its face is white: the mark's own navy
-   and orange both stay legible on it, which neither a navy nor an accent
-   face would allow. The accent stroke keeps it distinct from the three
-   cream pieces and from the white page behind it. Face + mark sit in one
-   <g>, so this transform carries both.
    Entry is an animation, not a transition, so :hover stays instant. */
 .puzzle__key {
   --key-rest: translate(24px, -28px) rotate(5deg);
+  fill: var(--accent);
   transform: var(--key-rest);
   /* filter lengths are SVG user units, so the shadow scales with the figure */
   filter: drop-shadow(0 4px 7px rgba(8, 6, 31, 0.18));
@@ -1040,15 +1036,7 @@ p {
     transform 0.35s var(--ease),
     filter 0.35s var(--ease);
 }
-.puzzle__key-face {
-  fill: var(--white);
-  stroke: var(--accent);
-  stroke-width: 1.6;
-  stroke-linejoin: round;
-}
-.puzzle__key-mark {
-  pointer-events: none;
-}
+
 .puzzle.is-visible .puzzle__key {
   animation: key-arrive 0.75s var(--ease) 0.45s backwards;
 }
