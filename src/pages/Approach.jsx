@@ -67,6 +67,24 @@ export function Approach() {
         </div>
       </section>
 
+      <section className="section section--alt">
+        <div className="split">
+          <Reveal as="div" className="split__media">
+            <img src="/assets/awareness-circle.jpg" alt="Investor awareness programme session" />
+          </Reveal>
+          <Reveal as="div" delay={1}>
+            <span className="eyebrow">Beyond Wealth: Creating Awareness</span>
+            <p>Toral's work goes beyond individual client conversations, through initiatives that build financial awareness more broadly:</p>
+            <div className="tag-row" style={{ justifyContent: 'flex-start' }}>
+              <span className="tag">Niveshika</span>
+              <span className="tag">Investor Awareness Programmes (IAPs)</span>
+              <span className="tag">Private Wealth Circle</span>
+              <span className="tag">Financial Education Initiatives</span>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
 {/* WHAT WE DON'T DO - NOT REQUIRED AS OF NOW */}
       {/* <section className="section section--alt">
         <div className="split split--reverse">
