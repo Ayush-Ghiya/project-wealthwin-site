@@ -1032,7 +1032,7 @@ p {
    <g>, so this transform carries both.
    Entry is an animation, not a transition, so :hover stays instant. */
 .puzzle__key {
-  --key-rest: translate(24px, -28px) rotate(-5deg);
+  --key-rest: translate(24px, -28px) rotate(5deg);
   transform: var(--key-rest);
   /* filter lengths are SVG user units, so the shadow scales with the figure */
   filter: drop-shadow(0 4px 7px rgba(8, 6, 31, 0.18));

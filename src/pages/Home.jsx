@@ -79,7 +79,7 @@ export function Home() {
             </svg>
           </Reveal>
           <Reveal as="div" delay={1}>
-            <span className="eyebrow">The Missing Piece</span>
+            <span className="eyebrow">The Problem</span>
             <p>You may be doing well financially, but everything may not be working together.<br/>Investments, protection, retirement, family responsibilities and aspirations are interconnected, yet financial decisions are often made individually.</p>
             <p>WealthWin addresses four core areas:</p>
           </Reveal>
