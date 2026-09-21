@@ -1,17 +1,31 @@
 import { Link } from 'preact-router/match';
 import { Reveal } from '../components/Reveal.jsx';
 
-/* Three pieces already locked into one solid bar — the parts of a financial
-   life that are each working. They are whole on their own: no empty socket.
-   The fourth piece (WealthWin) sits a little apart below the middle, tilted
-   and lifted, tab aimed at the bar's blank — additive, still arriving. */
+/* One square, split 2x2. Three quadrants — top-left, bottom-left,
+   bottom-right — are already locked together into an L, their shared seams
+   fully interlocked. The top-right quadrant is an open corner: the two edges
+   that face it (TL's right edge, BR's top edge) carry the concave half of the
+   joint, so the gap reads as a socket waiting, not a blank cut.
+
+   Square: (20,52)-(200,232). Midlines x=110, y=142. Knob radius 12.
+   Each shared arc is written once per side, same centre and radius, with
+   complementary sweep flags because the two outlines traverse it opposite ways:
+     TL v BL  centre (65,142)  bulges down  — TL's tab sunk into BL
+     BL v BR  centre (110,187) bulges right — BL's tab sunk into BR
+     TL v TR  centre (110,97)  bulges left  — socket in TL, tab on TR
+     BR v TR  centre (155,142) bulges down  — socket in BR, tab on TR   */
 const PUZZLE_PIECES = [
-  'M20,22 L110,22 L110,56 A11,11 0 0,1 110,78 L110,112 L20,112 Z',
-  'M110,22 L200,22 L200,56 A11,11 0 0,1 200,78 L200,112 L166,112 A11,11 0 0,0 144,112 L110,112 L110,78 A11,11 0 0,0 110,56 Z',
-  'M200,22 L290,22 L290,112 L200,112 L200,78 A11,11 0 0,0 200,56 Z',
+  /* top-left */
+  'M20,52 L110,52 L110,85 A12,12 0 0,0 110,109 L110,142 L77,142 A12,12 0 0,1 53,142 L20,142 Z',
+  /* bottom-left */
+  'M20,142 L53,142 A12,12 0 0,0 77,142 L110,142 L110,175 A12,12 0 0,1 110,199 L110,232 L20,232 Z',
+  /* bottom-right */
+  'M110,142 L143,142 A12,12 0 0,0 167,142 L200,142 L200,232 L110,232 L110,199 A12,12 0 0,0 110,175 Z',
 ];
+/* the top-right corner piece: flat along the square's outer top and right
+   edges, tabs protruding left and down into the two waiting sockets */
 const PUZZLE_KEY =
-  'M110,112 L144,112 A11,11 0 0,1 166,112 L200,112 L200,202 L110,202 Z';
+  'M110,52 L200,52 L200,142 L167,142 A12,12 0 0,1 143,142 L110,142 L110,109 A12,12 0 0,1 110,85 Z';
 
 export function Home() {
   return (
@@ -32,13 +46,14 @@ export function Home() {
           <Reveal as="div" className="puzzle">
             <svg
               className="puzzle__svg"
-              viewBox="0 0 310 250"
+              viewBox="0 0 250 252"
               role="img"
               aria-labelledby="puzzle-title"
             >
               <title id="puzzle-title">
-                Three interlocked pieces of your financial life, with a fourth piece moving in to join them.
+                A square jigsaw with three pieces already joined and the top-right corner missing, its piece moving in to fill the gap.
               </title>
+              <path className="puzzle__slot" d={PUZZLE_KEY} />
               {PUZZLE_PIECES.map((d, i) => (
                 <path key={i} className={`puzzle__piece puzzle__piece--${i + 1}`} d={d} />
               ))}

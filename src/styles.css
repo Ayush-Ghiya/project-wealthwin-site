@@ -986,7 +986,7 @@ p {
 /* Frameless by design: the pieces sit directly on the section background. */
 .puzzle {
   width: 100%;
-  max-width: 460px;
+  max-width: 400px;
   margin: 0 auto;
 }
 .puzzle__svg {
@@ -1001,6 +1001,17 @@ p {
   transform-box: fill-box;
   transform-origin: 50% 50%;
 }
+/* the empty top-right corner, drawn as a hairline so the whole figure still
+   reads as one square while its corner piece is away */
+.puzzle__slot {
+  fill: none;
+  stroke: var(--navy);
+  stroke-width: 1.2;
+  stroke-opacity: 0.3;
+  stroke-dasharray: 5 6;
+  stroke-linejoin: round;
+  transition: opacity 0.55s var(--ease) 0.34s;
+}
 /* the three pieces already fitted together */
 .puzzle__piece {
   fill: var(--cream);
@@ -1012,10 +1023,11 @@ p {
     opacity 0.55s var(--ease),
     transform 0.55s var(--ease);
 }
-/* WealthWin: the fourth piece, lifted off the surface and still arriving.
+/* WealthWin: the top-right corner piece, lifted off the surface and offset
+   up-and-out from its slot — still arriving, aimed back at that corner.
    Entry is an animation, not a transition, so :hover stays instant. */
 .puzzle__key {
-  --key-rest: translate(9px, 24px) rotate(-6deg);
+  --key-rest: translate(24px, -28px) rotate(-5deg);
   fill: var(--accent);
   transform: var(--key-rest);
   /* filter lengths are SVG user units, so the shadow scales with the figure */
@@ -1030,33 +1042,36 @@ p {
 @keyframes key-arrive {
   from {
     opacity: 0;
-    transform: translate(26px, 54px) rotate(-14deg);
+    transform: translate(48px, -60px) rotate(-13deg);
   }
   to {
     opacity: 1;
     transform: var(--key-rest);
   }
 }
-/* same hover vocabulary as .card: lift toward the joint, deepen the shadow */
+/* same hover vocabulary as .card: move toward the slot, straighten, deepen */
 @media (hover: hover) {
   .puzzle.is-visible .puzzle__key:hover {
-    transform: translate(7px, 16px) rotate(-3.5deg);
+    transform: translate(11px, -13px) rotate(-2deg);
     filter: drop-shadow(0 10px 22px rgba(8, 6, 31, 0.22));
   }
 }
 
-/* pre-reveal: the three drift together, the fourth comes in from further out */
+/* pre-reveal: the three drift together, the corner piece comes from further out */
+.puzzle:not(.is-visible) .puzzle__slot {
+  opacity: 0;
+}
 .puzzle:not(.is-visible) .puzzle__piece {
   opacity: 0;
 }
 .puzzle:not(.is-visible) .puzzle__piece--1 {
-  transform: translateX(-14px);
+  transform: translate(-12px, -10px);
 }
 .puzzle:not(.is-visible) .puzzle__piece--2 {
-  transform: translateY(-8px);
+  transform: translate(-12px, 10px);
 }
 .puzzle:not(.is-visible) .puzzle__piece--3 {
-  transform: translateX(14px);
+  transform: translate(12px, 10px);
 }
 .puzzle:not(.is-visible) .puzzle__key {
   opacity: 0;
@@ -1096,7 +1111,7 @@ p {
 }
 @media (max-width: 820px) {
   .puzzle {
-    max-width: 380px;
+    max-width: 340px;
   }
 }
 @media (max-width: 560px) {
@@ -1104,12 +1119,13 @@ p {
     grid-template-columns: 1fr;
   }
   .puzzle {
-    max-width: 320px;
+    max-width: 285px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .puzzle__piece,
+  .puzzle__slot,
   .puzzle__key {
     transition: none;
   }
@@ -1117,6 +1133,7 @@ p {
     opacity: 1;
     transform: none;
   }
+  .puzzle:not(.is-visible) .puzzle__slot,
   .puzzle:not(.is-visible) .puzzle__key {
     opacity: 1;
   }
