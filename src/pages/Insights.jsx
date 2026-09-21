@@ -75,7 +75,7 @@ export function Insights() {
             <p className="text-muted">Understanding financial concepts and choices</p>
           </Reveal>
           <Reveal as="div" className="card" delay={2}>
-            <h3>Women &amp; Wealth Programs</h3>
+            <h3>Women &amp; Wealth Programs (Niveshika)</h3>
             <p className="text-muted">Conversations on financial confidence</p>
           </Reveal>
           <Reveal as="div" className="card">

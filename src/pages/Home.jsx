@@ -7,7 +7,7 @@ export function Home() {
       <header className="hero">
         <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-skyline.jpg')" }}></div>
         <div className="hero__inner">
-          <Reveal as="p" className="hero__eyebrow">Wealth &amp; Investment Consultancy</Reveal>
+          <Reveal as="p" className="hero__eyebrow">Wealth &amp; Investment Solutions</Reveal>
           <Reveal as="h1" delay={1}>Beyond Returns. <span className="accent-line">Making Your Wealth Work Smarter.</span></Reveal>
           <Reveal as="p" delay={2}>Wealth is ultimately about the choices it gives you.</Reveal>
           <Reveal as={Link} href="/approach" className="btn btn--arrow" delay={3}>Discover Our Approach</Reveal>
@@ -76,8 +76,8 @@ export function Home() {
         </div>
       </section>
 
-      {/* WHAT WE HELP WITH */}
-      <section className="section section--alt">
+      {/* WHAT WE HELP WITH - NOT REQUIRED AS OF NOW */}
+      {/* <section className="section section--alt">
         <div className="split split--reverse">
           <Reveal as="div" className="split__media">
             <img src="/assets/living-well.jpg" alt="Building and managing wealth" />
@@ -92,10 +92,45 @@ export function Home() {
             </ul>
           </Reveal>
         </div>
+      </section> */}
+
+      
+
+  
+
+      {/* TORAL */}
+      <section className="section section--alt">
+        <div className="split">
+          <Reveal as="div" className="profile-img">
+            <img src="/assets/toral.jpg" alt="Toral Somaiya, Certified Financial Planner" />
+          </Reveal>
+          <Reveal as="div" delay={1}>
+            <span className="eyebrow">Meet Toral</span>
+            <p>Toral Somaiya, CFP®, MBA in Finance, works with clients to bring structure and clarity to their wealth</p>
+            <p>With a strong foundation in finance and a people-first approach, Toral helps you understand your finances, bring clarity to your decisions and build towards your goals.</p>
+            <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>&ldquo;Financial guidance should make people feel more informed &mdash; not more confused.&rdquo;</p>
+            <Link href="/about" className="btn btn--outline" style={{ color: 'var(--navy)' }}>Meet Toral</Link>
+          </Reveal>
+        </div>
+      </section>
+
+          {/* WHAT CLIENTS VALUE */}
+      <section className="section section--navy">
+        <Reveal as="div" className="container section__head">
+          <span className="eyebrow">What Clients Value</span>
+        </Reveal>
+        <Reveal as="div" className="container tag-row" delay={1}>
+          <span className="tag">Clarity</span>
+          <span className="tag">Personal attention</span>
+          <span className="tag">Responsiveness</span>
+          <span className="tag">Confidence</span>
+          <span className="tag">Discipline</span>
+          <span className="tag">Long-term relationships</span>
+        </Reveal>
       </section>
 
       {/* THE WEALTHWIN DIFFERENCE */}
-      <section className="section">
+      <section className="section section--alt">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">The WealthWin Difference</span>
           <p>Building financial confidence through:</p>
@@ -114,39 +149,6 @@ export function Home() {
             <p className="text-muted">Make your wealth work for the life you want.</p>
           </Reveal>
         </div>
-      </section>
-
-  
-
-      {/* TORAL */}
-      <section className="section section--alt">
-        <div className="split">
-          <Reveal as="div" className="profile-img">
-            <img src="/assets/toral.jpg" alt="Toral Somaiya, Certified Financial Planner" />
-          </Reveal>
-          <Reveal as="div" delay={1}>
-            <span className="eyebrow">Meet Your Planner</span>
-            <p>Toral Somaiya is a Certified Financial Planner with an MBA in Finance.</p>
-            <p>With a strong foundation in finance and a people-first approach, Toral helps you understand your finances, plan with clarity and build towards your goals.</p>
-            <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>&ldquo;Financial guidance should make people feel more informed &mdash; not more confused.&rdquo;</p>
-            <Link href="/about" className="btn btn--outline" style={{ color: 'var(--navy)' }}>Meet Toral</Link>
-          </Reveal>
-        </div>
-      </section>
-
-          {/* WHAT CLIENTS VALUE */}
-      <section className="section">
-        <Reveal as="div" className="container section__head">
-          <span className="eyebrow">What Clients Value</span>
-        </Reveal>
-        <Reveal as="div" className="container tag-row" delay={1}>
-          <span className="tag">Clarity</span>
-          <span className="tag">Personal attention</span>
-          <span className="tag">Responsiveness</span>
-          <span className="tag">Confidence</span>
-          <span className="tag">Discipline</span>
-          <span className="tag">Long-term relationships</span>
-        </Reveal>
       </section>
 
       {/* FINAL CTA */}

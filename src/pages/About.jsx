@@ -13,8 +13,8 @@ export function About() {
         <div className="hero__bg" style={{ backgroundImage: "url('/assets/city-momentum.jpg')" }}></div>
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">About Toral</Reveal>
-          <Reveal as="h1" delay={1}>Behind every financial plan is a person.<br/>And behind WealthWin is a belief.</Reveal>
-          <Reveal as="p" delay={2}>Financial guidance should simplify decisions, not complicate them.</Reveal>
+          <Reveal as="h1" delay={1}>Behind every financial strategy is a person.<br/>And behind WealthWin is a belief.</Reveal>
+          <Reveal as="p" delay={2}>Good financial guidance should simplify decisions, not complicate them.</Reveal>
           <Reveal as={Link} href="/contact" className="btn btn--arrow" delay={3}>Book a Conversation</Reveal>
         </div>
       </header>
@@ -44,7 +44,7 @@ export function About() {
         </Reveal>
         <div className="container grid">
           <Reveal as="div" className="card"><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;I don't want my clients to simply know what they own. I want them to understand why they own it.&rdquo;</p></Reveal>
-          <Reveal as="div" className="card" delay={1}><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;Good financial advice should simplify decisions, not complicate them.&rdquo;</p></Reveal>
+          <Reveal as="div" className="card" delay={1}><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;Good financial guidance should simplify decisions, not complicate them.&rdquo;</p></Reveal>
           <Reveal as="div" className="card" delay={2}><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;My role is not to predict markets. It is to help clients make sensible decisions through different cycles.&rdquo;</p></Reveal>
           <Reveal as="div" className="card" delay={3}><p className="quote" style={{ fontSize: '1.05rem' }}>&ldquo;Your wealth should do more than grow. It should create <b>security</b>, <b>choices</b> and <b>freedom</b> for the life you want to live.&rdquo;</p></Reveal>
         </div>
@@ -66,7 +66,7 @@ export function About() {
           </div>
            <div className="stat">
             <div className="stat__num"><span ref={counter3.ref}>{counter3.text}</span></div>
-            <div className="stat__label">Asset under advice</div>
+            <div className="stat__label">Asset under service</div>
           </div>
         </Reveal>
            
@@ -76,7 +76,6 @@ export function About() {
             <Reveal as="li" delay={1}>MBA &ndash; Finance</Reveal>
             <Reveal as="li" delay={2}>10 years of experience</Reveal>
             <Reveal as="li">NRI Practice Management expertise</Reveal>
-            <Reveal as="li" delay={1}>1000+ people reached through financial education</Reveal>
             <Reveal as="li" delay={2}>Teaching and faculty experience</Reveal>
             <Reveal as="li">Investor education initiatives</Reveal>
             <Reveal as="li" delay={1}>Ongoing professional learning</Reveal>

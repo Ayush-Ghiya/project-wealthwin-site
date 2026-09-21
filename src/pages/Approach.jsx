@@ -53,18 +53,6 @@ export function Approach() {
         </Reveal>
         <div className="container grid">
           <Reveal as="div" className="card">
-            <h3>1. People Before Products</h3>
-            <p className="text-muted">Understanding the person behind the money comes first.</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={1}>
-            <h3>2. Purpose Before Performance</h3>
-            <p className="text-muted">Returns matter. But without purpose, they don't create security.</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={2}>
-            <h3>3. Strategy Before Selection</h3>
-            <p className="text-muted">Investments are one part of wealth management.</p>
-          </Reveal>
-          <Reveal as="div" className="card">
             <h3>4. Diversification Before Prediction</h3>
             <p className="text-muted">Building resilient strategies rather than predicting markets.</p>
           </Reveal>
@@ -74,12 +62,13 @@ export function Approach() {
           </Reveal>
           <Reveal as="div" className="card" delay={2}>
             <h3>6. Partnership Over Transactions</h3>
-            <p className="text-muted">Ongoing relationship, not one-time recommendations.</p>
+            <p className="text-muted">Ongoing relationship, not one-time transaction.</p>
           </Reveal>
         </div>
       </section>
 
-      <section className="section section--alt">
+{/* WHAT WE DON'T DO - NOT REQUIRED AS OF NOW */}
+      {/* <section className="section section--alt">
         <div className="split split--reverse">
           <Reveal as="div" className="split__media">
             <img src="/assets/steadfast-tree.jpg" alt="Disciplined investing over market cycles" />
@@ -96,7 +85,7 @@ export function Approach() {
             </ul>
           </Reveal>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

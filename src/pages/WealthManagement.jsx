@@ -14,7 +14,22 @@ export function WealthManagement() {
         </div>
       </header>
 
-      <section className="section section--alt">
+        <section className="section section--alt">
+        <Reveal as="div" className="container section__head">
+          <span className="eyebrow">Our Role</span>
+          <p className="quote">Think of us as your financial sounding board.</p>
+        </Reveal>
+        <div className="container">
+          <ul className="check-list check-list--center">
+            <Reveal as="li">Stepping back from individual investments</Reveal>
+            <Reveal as="li" delay={1}>Seeing the bigger picture</Reveal>
+            <Reveal as="li" delay={1}>Making informed decisions</Reveal>
+            <Reveal as="li" delay={2}>Staying disciplined through market cycles</Reveal>
+          </ul>
+        </div>
+      </section>
+
+      <section className="section section--navy">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Investment &amp; Wealth Solutions</span>
           <p className="quote">Products are tools. The strategy comes first.</p>
@@ -32,7 +47,8 @@ export function WealthManagement() {
         </Reveal>
       </section>
 
-      <section className="section">
+      {/** NOT REQUIRED */}
+      {/* <section className="section">
         <div className="split">
           <Reveal as="div" className="split__media">
             <img src="/assets/family-generations.jpg" alt="Wealth management consultation" />
@@ -49,40 +65,26 @@ export function WealthManagement() {
             </ul>
           </Reveal>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section section--alt">
-        <Reveal as="div" className="container section__head">
-          <span className="eyebrow">Our Role</span>
-          <p className="quote">Think of us as your financial sounding board.</p>
-        </Reveal>
-        <div className="container">
-          <ul className="check-list check-list--center">
-            <Reveal as="li">Stepping back from individual investments</Reveal>
-            <Reveal as="li" delay={1}>Seeing the bigger picture</Reveal>
-            <Reveal as="li" delay={1}>Making informed decisions</Reveal>
-            <Reveal as="li" delay={2}>Staying disciplined through market cycles</Reveal>
-          </ul>
-        </div>
-      </section>
+    
 
-      {/* WHO I WORK WITH (moved from the About page) */}
+      {/* WHO I WORK WITH  */}
       <section className="section">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Who I Work With</span>
           <h2 className="section__title">A plan that meets you where you are.</h2>
-          <p>Clients are people who:</p>
         </Reveal>
-        <Reveal as="div" className="container" style={{ marginBottom: '44px' }}>
+        {/* <Reveal as="div" className="container" style={{ marginBottom: '44px' }}>
           <ul className="check-list grid grid--3">
-            <li>Value professional advice</li>
+            <li>Value professional guidance</li>
             <li>Want to understand their money</li>
             <li>Appreciate long-term relationships</li>
             <li>Plan rather than react</li>
             <li>Want wealth to support their life</li>
             <li>Believe in informed decision making</li>
           </ul>
-        </Reveal>
+        </Reveal> */}
         <div className="container people-grid">
           <Reveal as="div" className="people-card card">
             <div className="people-card__title">Client Type</div>
@@ -102,7 +104,7 @@ export function WealthManagement() {
           <Reveal as="div" className="people-card card" delay={3}>
             <div className="people-card__title">Client Type</div>
             <h3>HNI Families</h3>
-            <p className="text-muted">High-net-worth families looking for structured, multi-generational wealth planning</p>
+            <p className="text-muted">High-net-worth families looking for structured, multi-generational wealth management</p>
           </Reveal>
           <Reveal as="div" className="people-card card" delay={4}>
             <div className="people-card__title">Client Type</div>
