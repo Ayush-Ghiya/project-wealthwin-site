@@ -1,16 +1,17 @@
 import { Link } from 'preact-router/match';
 import { Reveal } from '../components/Reveal.jsx';
 
-/* Pinwheel dissection of one square into four outer pieces (the four core
-   areas) plus a central piece whose four tabs lock into all of them. */
-const PUZZLE_KEY =
-  'M68,68 L91,68 A9,9 0 0,1 109,68 L132,68 L132,91 A9,9 0 0,1 132,109 L132,132 L109,132 A9,9 0 0,1 91,132 L68,132 L68,109 A9,9 0 0,1 68,91 Z';
+/* Three pieces already locked into one solid bar — the parts of a financial
+   life that are each working. They are whole on their own: no empty socket.
+   The fourth piece (WealthWin) sits a little apart below the middle, tilted
+   and lifted, tab aimed at the bar's blank — additive, still arriving. */
 const PUZZLE_PIECES = [
-  'M0,0 L132,0 L132,25 A9,9 0 0,1 132,43 L132,68 L109,68 A9,9 0 0,0 91,68 L43,68 A9,9 0 0,0 25,68 L0,68 Z',
-  'M132,0 L200,0 L200,132 L175,132 A9,9 0 0,1 157,132 L132,132 L132,109 A9,9 0 0,0 132,91 L132,43 A9,9 0 0,0 132,25 Z',
-  'M68,132 L91,132 A9,9 0 0,0 109,132 L157,132 A9,9 0 0,0 175,132 L200,132 L200,200 L68,200 L68,175 A9,9 0 0,1 68,157 Z',
-  'M0,68 L25,68 A9,9 0 0,1 43,68 L68,68 L68,91 A9,9 0 0,0 68,109 L68,157 A9,9 0 0,0 68,175 L68,200 L0,200 Z',
+  'M20,22 L110,22 L110,56 A11,11 0 0,1 110,78 L110,112 L20,112 Z',
+  'M110,22 L200,22 L200,56 A11,11 0 0,1 200,78 L200,112 L166,112 A11,11 0 0,0 144,112 L110,112 L110,78 A11,11 0 0,0 110,56 Z',
+  'M200,22 L290,22 L290,112 L200,112 L200,78 A11,11 0 0,0 200,56 Z',
 ];
+const PUZZLE_KEY =
+  'M110,112 L144,112 A11,11 0 0,1 166,112 L200,112 L200,202 L110,202 Z';
 
 export function Home() {
   return (
@@ -31,17 +32,16 @@ export function Home() {
           <Reveal as="div" className="puzzle">
             <svg
               className="puzzle__svg"
-              viewBox="0 0 200 200"
+              viewBox="0 0 310 250"
               role="img"
               aria-labelledby="puzzle-title"
             >
               <title id="puzzle-title">
-                Four interlocking pieces of your financial life, completed by a central connecting piece.
+                Three interlocked pieces of your financial life, with a fourth piece moving in to join them.
               </title>
               {PUZZLE_PIECES.map((d, i) => (
                 <path key={i} className={`puzzle__piece puzzle__piece--${i + 1}`} d={d} />
               ))}
-              <path className="puzzle__slot" d={PUZZLE_KEY} />
               <path className="puzzle__key" d={PUZZLE_KEY} />
             </svg>
           </Reveal>
