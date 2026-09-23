@@ -55,7 +55,7 @@ export function About() {
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Experience &amp; Credentials</span>
         </Reveal>
-        <Reveal as="div" className="container stats" style={{ marginBottom: '48px' }}>
+        <Reveal as="div" className="container stats">
           <div className="stat">
             <div className="stat__num"><span ref={counter.ref}>{counter.text}</span></div>
             <div className="stat__label">people reached through financial education</div>
@@ -69,17 +69,25 @@ export function About() {
             <div className="stat__label">Asset under service</div>
           </div>
         </Reveal>
-           
-        <div className="container">
-          <ul className="check-list grid">
-            <Reveal as="li">CFP&reg; (Certified Financial Planner)</Reveal>
-            <Reveal as="li" delay={1}>MBA &ndash; Finance</Reveal>
-            <Reveal as="li" delay={2}>10 years of experience</Reveal>
-            <Reveal as="li">NRI Practice Management expertise</Reveal>
-            <Reveal as="li" delay={2}>Teaching and faculty experience</Reveal>
-            <Reveal as="li">Investor education initiatives</Reveal>
-            <Reveal as="li" delay={1}>Ongoing professional learning</Reveal>
-          </ul>
+
+        <div className="container credential-groups">
+          <Reveal as="div" className="credential-group">
+            <h3 className="credential-group__label">Qualifications</h3>
+            <ul className="check-list">
+              <Reveal as="li">CFP&reg; (Certified Financial Planner)</Reveal>
+              <Reveal as="li" delay={1}>MBA &ndash; Finance</Reveal>
+              <Reveal as="li" delay={2}>10 years of experience</Reveal>
+            </ul>
+          </Reveal>
+          <Reveal as="div" className="credential-group" delay={1}>
+            <h3 className="credential-group__label">Experience &amp; Initiatives</h3>
+            <ul className="check-list">
+              <Reveal as="li">NRI Practice Management expertise</Reveal>
+              <Reveal as="li" delay={1}>Teaching and faculty experience</Reveal>
+              <Reveal as="li" delay={2}>Investor education initiatives</Reveal>
+              <Reveal as="li" delay={1}>Ongoing professional learning</Reveal>
+            </ul>
+          </Reveal>
         </div>
       </section>
 

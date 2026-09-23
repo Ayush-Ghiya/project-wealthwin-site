@@ -685,6 +685,16 @@ p {
 .section:not(.section--navy) .tag {
   color: var(--navy);
 }
+/* "What Clients Value" (Home) only: a quiet dot between items so the row
+   reads as a list of six values, not one run-on phrase. Pure ::before,
+   no extra DOM nodes, so it can't disturb the mobile grid's item count
+   or the orphan-spanning rule below. */
+.tag-row--divided > .tag:not(:first-child)::before {
+  content: "\2022";
+  display: inline-block;
+  margin-right: 9px;
+  opacity: 0.45;
+}
 @media (max-width: 700px) {
   /* two even columns instead of a ragged centred wrap */
   .tag-row {
@@ -701,6 +711,11 @@ p {
      centred cells, without affecting the other .tag-row on WM Solutions */
   .tag-row.tag-row--left {
     text-align: left;
+  }
+  /* each tag already sits in its own grid cell at this width, so the
+     divider dot isn't needed here */
+  .tag-row--divided > .tag:not(:first-child)::before {
+    content: none;
   }
 }
 
@@ -727,6 +742,33 @@ p {
 }
 .section--navy .stat__label {
   color: #b9b8de;
+}
+
+/* Experience & Credentials: two labelled groups instead of one flat
+   7-item list, with room above to breathe away from the stats row */
+.credential-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 300px));
+  justify-content: center;
+  gap: 40px 72px;
+  margin-top: 56px;
+}
+.credential-group__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+.credential-group .check-list {
+  gap: 12px;
+}
+@media (max-width: 560px) {
+  .credential-groups {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
 
 /* ---------- CYCLE ---------- */
