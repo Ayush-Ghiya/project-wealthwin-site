@@ -8,7 +8,7 @@ export function Approach() {
         <div className="hero__bg" style={{ backgroundImage: "url('/assets/journey-lake.jpg')" }}></div>
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">Our Approach</Reveal>
-          <Reveal as="p" className="quote" delay={1}>&ldquo;We don't begin with products. We begin with you.&rdquo;</Reveal>
+          <Reveal as="p" className="quote" delay={1}>We don't begin with products. We begin with you.</Reveal>
           <Reveal as="p" delay={2}>The right financial solution aligns with your life, priorities and future.</Reveal>
           <Reveal as={Link} href="/contact" className="btn btn--arrow" delay={3}>Book a Conversation</Reveal>
         </div>
@@ -53,15 +53,15 @@ export function Approach() {
         </Reveal>
         <div className="container grid">
           <Reveal as="div" className="card">
-            <h3>4. Diversification Before Prediction</h3>
+            <h3>1. Diversification Before Prediction</h3>
             <p className="text-muted">Building resilient strategies rather than predicting markets.</p>
           </Reveal>
           <Reveal as="div" className="card" delay={1}>
-            <h3>5. Understanding Before Action</h3>
+            <h3>2. Understanding Before Action</h3>
             <p className="text-muted">You should know what you own, why you own it and what role it plays.</p>
           </Reveal>
           <Reveal as="div" className="card" delay={2}>
-            <h3>6. Partnership Over Transactions</h3>
+            <h3>3. Partnership Over Transactions</h3>
             <p className="text-muted">Ongoing relationship, not one-time transaction.</p>
           </Reveal>
         </div>
