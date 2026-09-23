@@ -744,31 +744,10 @@ p {
   color: #b9b8de;
 }
 
-/* Experience & Credentials: two labelled groups instead of one flat
-   7-item list, with room above to breathe away from the stats row */
-.credential-groups {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 300px));
-  justify-content: center;
-  gap: 40px 72px;
+/* Experience & Credentials: one list (no sub-grouping), just given room
+   to breathe below the stats row instead of sitting right under it */
+.credential-list-wrap {
   margin-top: 56px;
-}
-.credential-group__label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--accent);
-  margin-bottom: 16px;
-}
-.credential-group .check-list {
-  gap: 12px;
-}
-@media (max-width: 560px) {
-  .credential-groups {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
 }
 
 /* ---------- CYCLE ---------- */

@@ -70,24 +70,16 @@ export function About() {
           </div>
         </Reveal>
 
-        <div className="container credential-groups">
-          <Reveal as="div" className="credential-group">
-            <h3 className="credential-group__label">Qualifications</h3>
-            <ul className="check-list">
-              <Reveal as="li">CFP&reg; (Certified Financial Planner)</Reveal>
-              <Reveal as="li" delay={1}>MBA &ndash; Finance</Reveal>
-              <Reveal as="li" delay={2}>10 years of experience</Reveal>
-            </ul>
-          </Reveal>
-          <Reveal as="div" className="credential-group" delay={1}>
-            <h3 className="credential-group__label">Experience &amp; Initiatives</h3>
-            <ul className="check-list">
-              <Reveal as="li">NRI Practice Management expertise</Reveal>
-              <Reveal as="li" delay={1}>Teaching and faculty experience</Reveal>
-              <Reveal as="li" delay={2}>Investor education initiatives</Reveal>
-              <Reveal as="li" delay={1}>Ongoing professional learning</Reveal>
-            </ul>
-          </Reveal>
+        <div className="container credential-list-wrap">
+          <ul className="check-list check-list--center">
+            <Reveal as="li">CFP&reg; (Certified Financial Planner)</Reveal>
+            <Reveal as="li" delay={1}>MBA &ndash; Finance</Reveal>
+            <Reveal as="li" delay={2}>10 years of experience</Reveal>
+            <Reveal as="li">NRI Practice Management expertise</Reveal>
+            <Reveal as="li" delay={1}>Teaching and faculty experience</Reveal>
+            <Reveal as="li" delay={2}>Investor education initiatives</Reveal>
+            <Reveal as="li">Ongoing professional learning</Reveal>
+          </ul>
         </div>
       </section>
 
