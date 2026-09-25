@@ -28,10 +28,17 @@ export function About() {
           <Reveal as="div" delay={1}>
             <span className="eyebrow">My Story</span>
             <h2 className="section__title">Why I chose to build WealthWin</h2>
-            <p>Financial decisions are rarely just about money. They are connected to our families, aspirations, responsibilities, careers and the life we want to create.</p>
-            <p>Over the years, I saw that investors often didn't need more products or information. They needed more clarity &mdash; about what they owned, why they owned it and how it connected to their larger goals.</p>
-            <p>That shaped the way I wanted to work with clients.</p>
-            <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>WealthWin was built around a simple belief: better financial decisions begin with better understanding.</p>
+            <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>I believe money should make your life better &mdash; not more complicated.</p>
+            <p>You may be earning well. You may already have investments. You may even have a good portfolio.</p>
+            <p>But at some point, you may still wonder:<br/>Am I doing the right things with my money?<br/>Are my investments actually working towards my goals?<br/>What am I missing?</p>
+            <p>These are the questions that led me to build WealthWin.</p>
+            <p>I am a CFP&reg; with an MBA in Finance and over a decade of experience in financial services and investor education.</p>
+            <p>Over the years, I have worked with individuals and families to bring greater clarity and structure to their financial decisions, while also conducting investor education programs for professionals and organisations.</p>
+            <p>But what matters most to me is not the number of products in a portfolio.<br/>It is the quality of the financial decisions we make together.</p>
+            <p>I take time to understand your life, your goals, your responsibilities and your concerns before we talk about investments.<br/>Because your portfolio should fit your life &mdash; not the other way around.</p>
+            <p>At WealthWin, my commitment is simple:<br/>To help you understand your money better, invest with purpose and build wealth with confidence.</p>
+            <p>If you feel your money deserves more thought, more structure or simply a conversation with someone who will look at the bigger picture &mdash; I'd be happy to talk.</p>
+            <Link href="/contact" className="btn btn--outline" style={{ color: 'var(--navy)' }}>Let's Start a Conversation</Link>
           </Reveal>
         </div>
       </section>
