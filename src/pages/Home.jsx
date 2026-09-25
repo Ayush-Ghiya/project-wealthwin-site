@@ -70,9 +70,10 @@ export function Home() {
           <Reveal as="div" delay={1}>
             <span className="eyebrow">The Problem</span>
             <p>You may be doing well financially, but everything may not be working together.<br/>Investments, protection, retirement, family responsibilities and aspirations are interconnected, yet financial decisions are often made individually.</p>
-            <p>WealthWin addresses four core areas:</p>
+            <p className="areas-intro areas-intro--mobile">WealthWin addresses four core areas:</p>
           </Reveal>
         </div>
+        <p className="container areas-intro areas-intro--desktop">WealthWin addresses four core areas:</p>
         <div className="container grid puzzle-areas" style={{ marginTop: '56px' }}>
           <Reveal as="div" className="card card--piece">
             <h3>Growing Wealth</h3>

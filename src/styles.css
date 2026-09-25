@@ -1142,6 +1142,25 @@ p {
 .puzzle-areas {
   grid-template-columns: repeat(4, 1fr);
 }
+/* "WealthWin addresses four core areas:" exists twice — once inline with
+   the rest of the text column (mobile, where .split stacks and this line
+   already sits right above the cards), and once as its own line directly
+   above the card grid (desktop, where the text column is vertically
+   centred against the taller puzzle graphic and this line would otherwise
+   end up far from the list it's introducing). Only one is ever shown. */
+.areas-intro--desktop {
+  display: none;
+}
+@media (min-width: 821px) {
+  .areas-intro--mobile {
+    display: none;
+  }
+  .areas-intro--desktop {
+    display: block;
+    margin: 32px auto 0;
+    text-align: center;
+  }
+}
 .card--piece::before {
   content: "";
   display: block;
