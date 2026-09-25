@@ -148,15 +148,20 @@ export function Home() {
       {/* TORAL */}
       <section className="section section--alt">
         <div className="split">
-          <Reveal as="div" className="profile-img">
+          <Reveal as="div" className="profile-img profile-img--sm">
             <img src="/assets/toral.jpg" alt="Toral Somaiya, Certified Financial Planner" />
           </Reveal>
           <Reveal as="div" delay={1}>
             <span className="eyebrow">Meet Toral</span>
-            <p>Toral Somaiya, CFP®, MBA in Finance, works with clients to bring structure and clarity to their wealth</p>
-            <p>With a strong foundation in finance and a people-first approach, Toral helps you understand your finances, bring clarity to your decisions and build towards your goals.</p>
-            <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>&ldquo;Financial guidance should make people feel more informed &mdash; not more confused.&rdquo;</p>
-            <Link href="/about" className="btn btn--outline" style={{ color: 'var(--navy)' }}>Meet Toral</Link>
+            <p className="quote" style={{ textAlign: 'left', marginLeft: 0 }}>Your money deserves more than a product. It deserves a strategy.</p>
+            <p>You work hard to earn, save and build your wealth. But as life changes, financial decisions become more complex.</p>
+            <p>Where should you invest? Are you taking the right amount of risk? Is your portfolio aligned with your goals? And are you truly prepared for what lies ahead?</p>
+            <p>These are the conversations I have with my clients every day.</p>
+            <p>Whether you're just starting to build wealth or already managing significant assets, this is where that conversation begins.</p>
+            <div className="btn-row">
+              <Link href="/about" className="btn btn--outline" style={{ color: 'var(--navy)' }}>Meet Toral</Link>
+              <Link href="/contact" className="btn btn--arrow">Start a Conversation</Link>
+            </div>
           </Reveal>
         </div>
       </section>

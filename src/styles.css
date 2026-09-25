@@ -414,6 +414,12 @@ p {
 .btn--arrow::after {
   content: " →";
 }
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
 
 /* ---------- SECTIONS ---------- */
 .section {
@@ -806,6 +812,11 @@ p {
   overflow: hidden;
   box-shadow: 0 24px 60px rgba(8, 6, 31, 0.22);
   max-width: 350px;
+}
+/* Home page's "Meet Toral" photo only — half the usual size.
+   About page's larger portrait is untouched. */
+.profile-img--sm {
+  max-width: 175px;
 }
 .profile-img img {
   width: 100%;
