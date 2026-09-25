@@ -68,19 +68,47 @@ export function Approach() {
       </section>
 
       <section className="section section--alt">
-        <div className="split">
-          <Reveal as="div" className="split__media">
-            <img src="/assets/awareness-circle.jpg" alt="Investor awareness programme session" />
+        <Reveal as="div" className="container section__head">
+          <span className="eyebrow">Beyond Wealth</span>
+          <p>Toral's work goes beyond individual client conversations, through initiatives that build financial awareness more broadly:</p>
+        </Reveal>
+        <div className="container grid grid--3">
+          <Reveal as="div" className="card">
+            <h3>Niveshika</h3>
+            <p className="text-muted">Customised wealth-building approach</p>
           </Reveal>
-          <Reveal as="div" delay={1}>
-            <span className="eyebrow">Beyond Wealth: Creating Awareness</span>
-            <p>Toral's work goes beyond individual client conversations, through initiatives that build financial awareness more broadly:</p>
-            <div className="tag-row" style={{ justifyContent: 'flex-start' }}>
-              <span className="tag">Niveshika</span>
-              <span className="tag">Investor Awareness Programmes (IAPs)</span>
-              <span className="tag">Private Wealth Circle</span>
-              <span className="tag">Financial Education Initiatives</span>
-            </div>
+          <Reveal as="div" className="card" delay={1}>
+            <h3>Investor Awareness Programmes (IAPs)</h3>
+            <p className="text-muted">Structured sessions to build investor awareness and financial literacy</p>
+          </Reveal>
+          <Reveal as="div" className="card" delay={2}>
+            <h3>Private Wealth Circle</h3>
+            <p className="text-muted">Exclusive sessions for selected clients</p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* LEARNING OFFERINGS (moved from the Insights & Learning page) */}
+      <section className="section">
+        <Reveal as="div" className="container section__head">
+          <span className="eyebrow">Learning Offerings</span>
+        </Reveal>
+        <div className="container grid grid--2">
+          <Reveal as="div" className="card">
+            <h3>Corporate Workshops</h3>
+            <p className="text-muted">Practical financial education for organisations</p>
+          </Reveal>
+          <Reveal as="div" className="card" delay={1}>
+            <h3>Investor Awareness Sessions</h3>
+            <p className="text-muted">Understanding financial concepts and choices</p>
+          </Reveal>
+          <Reveal as="div" className="card" delay={2}>
+            <h3>Women &amp; Wealth Programs (Niveshika)</h3>
+            <p className="text-muted">Conversations on financial confidence</p>
+          </Reveal>
+          <Reveal as="div" className="card">
+            <h3>Private Wealth Circle</h3>
+            <p className="text-muted">Exclusive sessions for selected clients</p>
           </Reveal>
         </div>
       </section>

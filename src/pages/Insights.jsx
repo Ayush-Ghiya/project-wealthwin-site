@@ -63,30 +63,6 @@ export function Insights() {
 
       <section className="section section--alt">
         <Reveal as="div" className="container section__head">
-          <span className="eyebrow">Learning Offerings</span>
-        </Reveal>
-        <div className="container grid grid--2">
-          <Reveal as="div" className="card">
-            <h3>Corporate Workshops</h3>
-            <p className="text-muted">Practical financial education for organisations</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={1}>
-            <h3>Investor Awareness Sessions</h3>
-            <p className="text-muted">Understanding financial concepts and choices</p>
-          </Reveal>
-          <Reveal as="div" className="card" delay={2}>
-            <h3>Women &amp; Wealth Programs (Niveshika)</h3>
-            <p className="text-muted">Conversations on financial confidence</p>
-          </Reveal>
-          <Reveal as="div" className="card">
-            <h3>Private Wealth Circle</h3>
-            <p className="text-muted">Exclusive sessions for selected clients</p>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="section">
-        <Reveal as="div" className="container section__head">
           <span className="eyebrow">Featured Content</span>
         </Reveal>
         <div className="container grid">
@@ -121,7 +97,7 @@ export function Insights() {
         </div>
       </section>
 
-      <section className="section section--alt">
+      <section className="section">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Contact Form</span>
           <p>Have a financial question you've been putting off?<br/>You don't need to have everything figured out before starting a conversation.</p>
