@@ -48,11 +48,6 @@ export function WealthManagement() {
           </Reveal>
           <Reveal as="div" className="people-card card" delay={2}>
             <div className="people-card__title">Solution</div>
-            <h3>PMS</h3>
-            <p className="text-muted">Personalised portfolios, directly managed for larger investments.</p>
-          </Reveal>
-          <Reveal as="div" className="people-card card" delay={3}>
-            <div className="people-card__title">Solution</div>
             <h3>SIF</h3>
             <p className="text-muted">A newer category of specialised, differentiated investment strategies.</p>
           </Reveal>
