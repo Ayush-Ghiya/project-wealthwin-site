@@ -21,8 +21,8 @@ export function About() {
 
       {/* MY STORY */}
       <section className="section">
-        <div className="split">
-          <Reveal as="div" className="profile-img">
+        <div className="split story-split">
+          <Reveal as="div" className="profile-img profile-img--sticky">
             <img src="/assets/toral.jpg" alt="Toral Somaiya, Certified Financial Planner" />
           </Reveal>
           <Reveal as="div" delay={1}>

@@ -490,6 +490,7 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 56px;
   align-items: center;
+  justify-items: center;
 }
 .split--reverse .split__media {
   order: 2;
@@ -816,7 +817,25 @@ p {
 /* Home page's "Meet Toral" photo only — half the usual size.
    About page's larger portrait is untouched. */
 .profile-img--sm {
-  max-width: 175px;
+  max-width: 250px;
+}
+/* About page's "My Story" split only: photo stays pinned while the long
+   narrative scrolls past it. Desktop-only — collapses to normal static
+   flow once .split itself stacks to one column, so the photo doesn't
+   stick to the top of the viewport on mobile. */
+.story-split {
+  align-items: flex-start;
+  position: relative;
+}
+.profile-img--sticky {
+  position: sticky;
+  top: 20%;
+}
+@media (max-width: 820px) {
+  .profile-img--sticky {
+    position: static;
+    top: auto;
+  }
 }
 .profile-img img {
   width: 100%;
