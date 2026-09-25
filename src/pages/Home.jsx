@@ -177,7 +177,7 @@ export function Home() {
       </section>
 
       {/* THE WEALTHWIN DIFFERENCE */}
-      <section className="section section--alt">
+      {/* <section className="section section--alt">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">The WealthWin Difference</span>
           <p>Building financial confidence through:</p>
@@ -196,7 +196,7 @@ export function Home() {
             <p className="text-muted">Make your wealth work for the life you want.</p>
           </Reveal>
         </div>
-      </section>
+      </section> */}
 
       {/* FINAL CTA */}
       <section className="cta-banner">
