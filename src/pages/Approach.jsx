@@ -89,7 +89,7 @@ export function Approach() {
       </section>
 
       {/* LEARNING OFFERINGS (moved from the Insights & Learning page) */}
-      <section className="section">
+      {/* <section className="section">
         <Reveal as="div" className="container section__head">
           <span className="eyebrow">Learning Offerings</span>
         </Reveal>
@@ -111,7 +111,7 @@ export function Approach() {
             <p className="text-muted">Exclusive sessions for selected clients</p>
           </Reveal>
         </div>
-      </section>
+      </section> */}
 
 {/* WHAT WE DON'T DO - NOT REQUIRED AS OF NOW */}
       {/* <section className="section section--alt">
