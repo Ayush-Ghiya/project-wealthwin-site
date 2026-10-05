@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [preact()],
-    server: { port, strictPort: Boolean(env.PORT) },
-    preview: { port, strictPort: Boolean(env.PORT) },
+    server: { port, strictPort: Boolean(env.PORT), allowedHosts: true },
+    preview: { port, strictPort: Boolean(env.PORT), allowedHosts: true },
   };
 });
