@@ -5,7 +5,7 @@ export function Approach() {
   return (
     <>
       <header className="hero hero--small">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/journey-lake.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-boardroom-session.jpg')" }}></div>
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">Our Approach</Reveal>
           <Reveal as="p" className="quote" delay={1}>We don't begin with products. We begin with you.</Reveal>

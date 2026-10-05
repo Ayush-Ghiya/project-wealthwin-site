@@ -5,7 +5,7 @@ export function WealthManagement() {
   return (
     <>
       <header className="hero">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/freedom-shore.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-staying-rich.jpg')" }}></div>
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">Wealth Management</Reveal>
           <Reveal as="h1" delay={1}>You've worked hard to build your wealth. <span className="accent-line">Now make it work smarter.</span></Reveal>

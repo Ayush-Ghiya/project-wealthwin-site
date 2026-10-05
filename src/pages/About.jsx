@@ -10,7 +10,7 @@ export function About() {
   return (
     <>
       <header className="hero hero--small">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/city-momentum.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-toral-speaking.jpg')", backgroundPosition: '72% center' }}></div>
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">About Toral</Reveal>
           <Reveal as="h1" delay={1}>Behind every financial strategy is a person.<br/>And behind WealthWin is a belief.</Reveal>

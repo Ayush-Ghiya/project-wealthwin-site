@@ -31,7 +31,7 @@ export function Home() {
   return (
     <>
       <header className="hero">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-skyline.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-sip-workshop.jpg')" }}></div>
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">Wealth &amp; Investment Solutions</Reveal>
           <Reveal as="h1" delay={1}>Beyond Returns. <span className="accent-line">Making Your Wealth Work Smarter.</span></Reveal>

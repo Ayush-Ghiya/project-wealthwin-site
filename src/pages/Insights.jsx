@@ -28,7 +28,7 @@ export function Insights() {
   return (
     <>
       <header className="hero hero--small">
-        <div className="hero__bg" style={{ backgroundImage: "url('/assets/insights-hero.jpg')" }}></div>
+        <div className="hero__bg" style={{ backgroundImage: "url('/assets/hero-smart-investor.jpg')", backgroundPosition: '78% center' }}></div>
         <div className="hero__inner">
           <Reveal as="p" className="hero__eyebrow">Insights &amp; Learning</Reveal>
           <Reveal as="h1" delay={1}>Better financial decisions begin with better understanding.</Reveal>
