@@ -25,7 +25,7 @@ export function Footer() {
           <ul className="footer__links">
             <li><Link href="/about">About Toral</Link></li>
             <li><Link href="/contact">Book a Conversation</Link></li>
-            <li>Email: <a href="mailto:toralsomaiya@thewealthwin.com">toralsomaiya@thewealthwin.com</a></li>
+            <li>Email: <a href="mailto:toral_somaiya@yahoo.com">toral_somaiya@yahoo.com</a></li>
             <li>Phone: <a href="tel:+917600996888">+91 7600 996 888</a></li>
           </ul>
         </div>

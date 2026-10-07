@@ -88,7 +88,7 @@ export function Contact() {
           </Reveal>
           <Reveal as="div" className="card" delay={1}>
             <h3>Email</h3>
-            <p className="text-muted"><a href="mailto:toralsomaiya@thewealthwin.com">toralsomaiya@thewealthwin.com</a></p>
+            <p className="text-muted"><a href="mailto:toral_somaiya@yahoo.com">toral_somaiya@yahoo.com</a></p>
           </Reveal>
           <Reveal as="div" className="card" delay={2}>
             <h3>Phone</h3>
